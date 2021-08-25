@@ -11,18 +11,19 @@ import React from 'react'
     }
  */
 export default function ProjectCard(props) {
+    const {imgLink,altText,projectName,tech,links} = props.project;
     return (
-        <div class="col-12 col-lg-5 card my-3 second-bg">
-          <div class="card second-bg">
+        <div className="col-12 col-lg-3 col-md-5 card custom-card-margin border-0 second-bg">
+          <div className="card second-bg">
             <img
-              src={props.imgLink}
-              class="card-img-top"
-              alt={props.altText}
+              src={imgLink}
+              className="card-img-top"
+              alt={altText}
             />
-            <div class="card-body second-bg">
-              <h5 class="card-title">{props.projectName}</h5>
-              <p class="card-text">{props.tech.join(" | ")}</p>
-              {props.links.map((item, i) => <a key={i} href={item.link} target="_blank" className="btn custom-btn">{item.title}</a>)}
+            <div className="card-body second-bg">
+              <h5 className="card-title">{projectName}</h5>
+              <p className="card-text">{tech.join(" | ")}</p>
+              {links.map((item, i) => <a key={i} href={item.link} target="_blank" className="btn custom-btn" rel="noreferrer">{item.title}</a>)}
             </div>
           </div>
         </div>

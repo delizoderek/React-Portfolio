@@ -1,5 +1,3 @@
-import React from 'react';
-
 /* props object
     imgLink - String
     altText - String
@@ -29,14 +27,14 @@ const projectList = [
         ],
     },
     {
-        imgLink: '',
-        altText: '',
-        projectName: '',
-        tech: [],
+        imgLink: './assets/media/SiteContent/Games-for-You_Thumbnail.png',
+        altText: 'A black and red themed webpage, with an image of a women standing in front of a firy backdrop',
+        projectName: 'Games for You',
+        tech: ["HTML","CSS","JavaScript","Git","RAWG API","Board Game Atlas API"],
         links: [
             {
-                title: '',
-                link: '',
+                title: 'Deployed Application',
+                link: 'https://delizoderek.github.io/Games-for-you/',
             },
         ],
     },

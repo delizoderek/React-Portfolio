@@ -92,6 +92,21 @@ li > .quin-text:hover {
   color: var(--tert-color);
 }
 
+/* Header Height */
+.h-height{
+  height: 15vh;
+}
+
+/* Footer Height */
+.f-height{
+
+}
+
+/* Container Height for Page Contents */
+.c-height{
+  min-height: 70vh;
+}
+
 .custom-nav {
   display: flex;
   padding-left: 0;
@@ -170,7 +185,7 @@ li > .quin-text:hover {
     --layout-direction: column;
     --justify-alignment: center;
     --alignment-direction: center;
-    --card-margin: 10px 0;
+    --card-margin: 20px;
     --burger-visibility: inline-block;
     --nav-visibility: none;
   }

@@ -5,7 +5,7 @@ function MenuItem(props) {
     <li className="nav-item">
       {props.downloadable ? 
       (<a className="nav-link quin-text" href={props.link} download>{props.title}</a>)
-      : (<a className="nav-link quin-text" href={props.link}>{props.title}</a>)}
+      : (<a className="nav-link quin-text" onClick={() => props.handleSetTab(props.title)} href={props.link}>{props.title}</a>)}
     </li>
   );
 }

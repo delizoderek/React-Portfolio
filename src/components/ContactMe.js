@@ -1,42 +1,110 @@
-import React from "react";
+import React, { useState } from 'react';
 
-export default function ContactMe() {
+// Here we import a helper function that will check if the email is valid
+import { validateEmail } from '../utils/helpers';
+
+function Form() {
+  // Create state variables for the fields in the form
+  // We are also setting their initial values to an empty string
+  const [email, setEmail] = useState('');
+  const [fullName, setFullName] = useState('');
+  const [message, setMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleInputChange = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    // Based on the input type, we set the state of either email, username, and password
+    if (inputType === 'email') {
+      setEmail(inputValue);
+    } else if (inputType === 'fullName') {
+      setFullName(inputValue);
+    } else {
+        setMessage(inputValue);
+    }
+  };
+
+  const handleFormSubmit = (e) => {
+    // Preventing the default behavior of the form submit (which is to refresh the page)
+    e.preventDefault();
+
+    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
+    if (!validateEmail(email)) {
+      setErrorMessage('Email is invalid');
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+    }
+
+    alert(JSON.stringify({
+        fullName,
+        email,
+        message
+    }))
+
+    // If everything goes according to plan, we want to clear out the input after a successful registration.
+    setFullName('');
+    setMessage('');
+    setEmail('');
+  };
+
   return (
-    <div
-      className="
-        col-12 col-lg-10
-        vw-100
-        d-flex
-        pb-5
-        justify-content-around
-        custom-direction
-        prime-bg
-      "
-    >
-      <h2 class="contactlinks quin-text">509-593-0047</h2>
-      <h2 class="contactlinks">
-        <a class="quin-text" href="mailto:dwdelizo@gmail.com" target="_blank">
-          dwdelizo@gmail.com
-        </a>
-      </h2>
-      <h2 class="contactlinks">
-        <a
-          class="quin-text"
-          href="https://www.linkedin.com/in/derek-delizo/"
-          target="_blank"
-        >
-          LinkedIn
-        </a>
-      </h2>
-      <h2 class="contactlinks">
-        <a
-          class="quin-text"
-          href="https://github.com/delizoderek"
-          target="_blank"
-        >
-          Github
-        </a>
-      </h2>
+    <div className="c-height">
+      <form>
+        <div className="col-12">
+          <label for="fullName" className="form-label">
+            Name
+          </label>
+          <input
+          value={fullName}
+            type="text"
+            className="form-control"
+            onChange={handleInputChange}
+            id="fullName"
+            name="fullName"
+            placeholder="John Doe"
+          />
+        </div>
+        <div className="col-12">
+          <label for="email" className="form-label">
+            Email
+          </label>
+          <input
+            value={email}
+            id="email"
+            className="form-control"
+            onChange={handleInputChange}
+            name="email"
+            type="email"
+            placeholder="email"
+          />
+        </div>
+        <div className="col-12">
+          <label for="message" className="form-label">
+            Message
+          </label>
+          <textarea
+          value={message}
+            className="form-control"
+            onChange={handleInputChange}
+            id="message"
+            rows="3"
+          ></textarea>
+        </div>
+        <button type="button" onClick={handleFormSubmit}>
+          Submit
+        </button>
+      </form>
+      {errorMessage && (
+        <div>
+          <p className="error-text">{errorMessage}</p>
+        </div>
+      )}
     </div>
   );
 }
+
+export default Form;
