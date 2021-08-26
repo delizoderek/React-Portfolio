@@ -4,7 +4,7 @@ import projectList from './projects/ProjectList'
 
 function Projects() {
     return (
-        <div className="col-12 d-flex flex-wrap p-4 align-items-center justify-content-center">
+        <div className="c-height col-12 d-flex flex-wrap p-4 align-items-center justify-content-center">
             {projectList.map((item,i) => {
                 return <ProjectCard key={i} project={item}/>
             })}

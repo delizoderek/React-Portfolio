@@ -3,7 +3,7 @@ import MenuItem from './MenuItem'
 const menuItems = [
     {
         title:'Home',
-        link:'#about-me',
+        link:'#home',
         downloadable: false
     },
     {

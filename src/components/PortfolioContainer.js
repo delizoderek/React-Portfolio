@@ -8,7 +8,7 @@ import Projects from './Projects'
 function PortfolioContainer() {
     const [currentTab, setTab] = useState('About Me');
     const loadTab = () => {
-        if(currentTab === 'About Me'){
+        if(currentTab === 'Home'){
             return <AboutMe/>
         } else if(currentTab === 'Projects'){
             return <Projects/>
@@ -19,11 +19,11 @@ function PortfolioContainer() {
 
     const handleSetTab = (page) => setTab(page);
     return (
-        <>
+        <div className="d-flex flex-column justify-content-between">
             <Header handleSetTab={handleSetTab} currentTab={currentTab}/>
             {loadTab()}
             <Footer/>
-        </>
+        </div>
     )
 }
 

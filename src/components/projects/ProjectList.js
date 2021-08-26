@@ -36,29 +36,57 @@ const projectList = [
                 title: 'Deployed Application',
                 link: 'https://delizoderek.github.io/Games-for-you/',
             },
-        ],
-    },
-    {
-        imgLink: '',
-        altText: '',
-        projectName: '',
-        tech: [],
-        links: [
             {
-                title: '',
-                link: '',
+                title: 'Source Code',
+                link: 'https://delizoderek.github.io/Games-for-you/',
             },
         ],
     },
     {
-        imgLink: '',
-        altText: '',
-        projectName: '',
-        tech: [],
+        imgLink: './assets/media/SiteContent/Budget-Tracker-PWA.png',
+        altText: 'Image of a graph that tracks the balance of an account',
+        projectName: 'PWA Budget Tracker',
+        tech: ["PWA","MongoDb","NodeJs","Javascript"],
         links: [
             {
-                title: '',
-                link: '',
+                title: 'Deployed Application',
+                link: 'https://dd-budget-pwa.herokuapp.com/',
+            },
+            {
+                title: 'Source Code',
+                link: 'https://github.com/delizoderek/progressive-budget',
+            },
+        ],
+    },
+    {
+        imgLink: './assets/media/SiteContent/team_generator.png',
+        altText: 'A group of cards with headings that say engineer, manager,and intern',
+        projectName: 'Team Profile Generator',
+        tech: ["NodeJs","Javascript","HTML","CSS"],
+        links: [
+            {
+                title: 'Video Demo',
+                link: 'https://www.youtube.com/watch?v=PEOoQzEkoWY',
+            },
+            {
+                title: 'Source Code',
+                link: 'https://github.com/delizoderek/team-generator',
+            },
+        ],
+    },
+    {
+        imgLink: './assets/media/SiteContent/employee-management-system.png',
+        altText: 'Image of white text with a black background',
+        projectName: 'Employee Management System',
+        tech: ["NodeJs","Javascript"],
+        links: [
+            {
+                title: 'Video Demo',
+                link: 'https://youtu.be/LmW_7BLclss',
+            },
+            {
+                title: 'Source Code',
+                link: 'https://github.com/delizoderek/employee-management-system',
             },
         ],
     }

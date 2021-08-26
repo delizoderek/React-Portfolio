@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
+import emailjs from "emailjs-com";
+import React, { useState } from "react";
 
 // Here we import a helper function that will check if the email is valid
-import { validateEmail } from '../utils/helpers';
+import { validateEmail } from "../utils/helpers";
 
 function Form() {
   // Create state variables for the fields in the form
   // We are also setting their initial values to an empty string
-  const [email, setEmail] = useState('');
-  const [fullName, setFullName] = useState('');
-  const [message, setMessage] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
+  const [email, setEmail] = useState("");
+  const [fullName, setFullName] = useState("");
+  const [message, setMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
@@ -18,12 +19,12 @@ function Form() {
     const inputValue = target.value;
 
     // Based on the input type, we set the state of either email, username, and password
-    if (inputType === 'email') {
+    if (inputType === "email") {
       setEmail(inputValue);
-    } else if (inputType === 'fullName') {
+    } else if (inputType === "fullName") {
       setFullName(inputValue);
     } else {
-        setMessage(inputValue);
+      setMessage(inputValue);
     }
   };
 
@@ -33,33 +34,45 @@ function Form() {
 
     // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
     if (!validateEmail(email)) {
-      setErrorMessage('Email is invalid');
+      setErrorMessage("Email is invalid");
       // We want to exit out of this code block if something is wrong so that the user can correct it
       return;
       // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
     }
 
-    alert(JSON.stringify({
+    emailjs.sendForm(
+      process.env.EMAILJS_ID,
+      "template_6w2ybri",
+      e.target
+    ).then(() => {
+      console.log('success');
+    }).catch((error) => {
+      console.log(error);
+    });
+
+    alert(
+      JSON.stringify({
         fullName,
         email,
-        message
-    }))
+        message,
+      })
+    );
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
-    setFullName('');
-    setMessage('');
-    setEmail('');
+    setFullName("");
+    setMessage("");
+    setEmail("");
   };
 
   return (
-    <div className="c-height">
-      <form>
+    <div className="d-flex justify-content-center align-items-center c-height">
+      <form className="col-10 col-lg-6 h-50 second-bg m-3 p-4 rounded">
         <div className="col-12">
-          <label for="fullName" className="form-label">
+          <label htmlFor="fullName" className="fs-4 form-label quin-text mt-2">
             Name
           </label>
           <input
-          value={fullName}
+            value={fullName}
             type="text"
             className="form-control"
             onChange={handleInputChange}
@@ -69,7 +82,7 @@ function Form() {
           />
         </div>
         <div className="col-12">
-          <label for="email" className="form-label">
+          <label htmlFor="email" className="fs-4 form-label quin-text mt-2">
             Email
           </label>
           <input
@@ -79,22 +92,23 @@ function Form() {
             onChange={handleInputChange}
             name="email"
             type="email"
-            placeholder="email"
+            placeholder="email@email.com"
           />
         </div>
         <div className="col-12">
-          <label for="message" className="form-label">
+          <label htmlFor="message" className="fs-4 form-label quin-text mt-2">
             Message
           </label>
           <textarea
-          value={message}
+            value={message}
             className="form-control"
             onChange={handleInputChange}
             id="message"
             rows="3"
+            placeholder="This is some text"
           ></textarea>
         </div>
-        <button type="button" onClick={handleFormSubmit}>
+        <button type="button" className="btn custom-btn my-2 second-text" onClick={handleFormSubmit}>
           Submit
         </button>
       </form>

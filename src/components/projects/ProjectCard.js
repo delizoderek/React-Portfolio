@@ -21,9 +21,11 @@ export default function ProjectCard(props) {
               alt={altText}
             />
             <div className="card-body second-bg">
-              <h5 className="card-title">{projectName}</h5>
-              <p className="card-text">{tech.join(" | ")}</p>
-              {links.map((item, i) => <a key={i} href={item.link} target="_blank" className="btn custom-btn" rel="noreferrer">{item.title}</a>)}
+              <h5 className="card-title quin-text">{projectName}</h5>
+              <p className="card-text quin-text">{tech.join(" | ")}</p>
+              <div className="d-flex flex-column align-items-start">
+                {links.map((item, i) => <a key={i} href={item.link} target="_blank" className="btn custom-btn m-1 prime-text" rel="noreferrer">{item.title}</a>)}
+              </div>
             </div>
           </div>
         </div>
