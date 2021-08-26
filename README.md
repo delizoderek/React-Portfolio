@@ -1,4 +1,4 @@
-# delizoderek.github.io
+# React Portfolio
 
 The goal of this assignment was to setup a portfolio page that shows off the projects we have worked on. The site needed to be created using HTML and CSS, specifically using the flexbox selector that was added in css3
 
@@ -13,9 +13,9 @@ The goal of this assignment was to setup a portfolio page that shows off the pro
 
 ## [Portfolio Page](delizoderek.github.io)
 
-![Webpage1](./assets/media/ReadmeContent/Webpage1.png)
-![Webpage2](./assets/media/ReadmeContent/Webpage2.png)
-![Webpage3](./assets/media/ReadmeContent/Webpage3.png)
+![Webpage1](./public/assets/media/ReadmeContent/Webpage1.png)
+![Webpage2](./public/assets/media/ReadmeContent/Webpage2.png)
+![Webpage3](./public/assets/media/ReadmeContent/Webpage3.png)
 
 ## My Wireframe
 Here is the wireframe I used to initially mockup the website.
