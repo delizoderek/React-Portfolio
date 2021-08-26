@@ -6,7 +6,7 @@ import ContactMe from './ContactMe'
 import Projects from './Projects'
 
 function PortfolioContainer() {
-    const [currentTab, setTab] = useState('About Me');
+    const [currentTab, setTab] = useState('Home');
     const loadTab = () => {
         if(currentTab === 'Home'){
             return <AboutMe/>
