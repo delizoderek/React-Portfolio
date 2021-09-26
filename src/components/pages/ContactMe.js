@@ -1,6 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
-import { validateEmail } from "../utils/helpers";
+import { validateEmail } from "../../utils/helpers";
 
 class ContactMe extends React.Component {
   constructor(props) {

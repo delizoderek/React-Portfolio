@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 import Header from './header/Header'
 import Footer from './Footer'
-import AboutMe from './AboutMe'
-import ContactMe from './ContactMe'
-import Projects from './Projects'
+import AboutMe from './pages/AboutMe'
+import ContactMe from './pages/ContactMe'
+import Projects from './pages/Projects'
 
 function PortfolioContainer() {
     const [currentTab, setTab] = useState('Home');
