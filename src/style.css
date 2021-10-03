@@ -177,7 +177,5 @@ li > .quin-text:hover {
     --justify-alignment: center;
     --alignment-direction: center;
     --card-margin: 20px;
-    /* --burger-visibility: inline-block;
-    --nav-visibility: none; */
   }
 }

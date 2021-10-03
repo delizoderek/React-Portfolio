@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Header from './header/Header'
+import Navbar from './UI/Navbar'
 import Footer from './Footer'
 import AboutMe from './pages/AboutMe'
 import ContactMe from './pages/ContactMe'
@@ -19,11 +19,11 @@ function PortfolioContainer() {
 
     const handleSetTab = (page) => setTab(page);
     return (
-        <div className="d-flex flex-column justify-content-between">
-            <Header handleSetTab={handleSetTab} currentTab={currentTab}/>
+        <>
+            <Navbar/>
             {loadTab()}
             <Footer/>
-        </div>
+        </>
     )
 }
 
