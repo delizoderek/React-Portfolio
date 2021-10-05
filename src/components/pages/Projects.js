@@ -1,6 +1,6 @@
 import React from 'react'
-import ProjectCard from '../projects/ProjectCard'
-import projectList from '../projects/ProjectList'
+import ProjectCard from '../ui/ProjectCard'
+import projectList from '../../utils/ProjectList'
 
 function Projects() {
     return (

@@ -13,6 +13,22 @@ const projectList = [
     {
         imgLink: './assets/media/SiteContent/battle-brands_entirepage.gif',
         altText: 'A dragon icon contained within a box that has buttons for Petting, Feeding, and Playing',
+        projectName: 'Skater Hx',
+        tech: ["Express"," Node","MongoDb","GraphQl","React","Bootstrap","Git","Heroku"],
+        links: [
+            {
+                title: 'Deployed Application',
+                link: 'https://skaterhx.herokuapp.com/',
+            },
+            {
+                title: 'Source Code',
+                link: 'https://github.com/delizoderek/SkaterDb',
+            },
+        ],
+    },
+    {
+        imgLink: './assets/media/SiteContent/battle-brands_entirepage.gif',
+        altText: 'A dragon icon contained within a box that has buttons for Petting, Feeding, and Playing',
         projectName: 'Battle Brands',
         tech: ["HTML"," CSS"," JavaScript"," Express"," NodeJs"," SQL"," Git"],
         links: [
