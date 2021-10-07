@@ -12,14 +12,6 @@
   --card-margin: 30px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: black;
-}
-
 a {
   text-decoration: none;
 }

@@ -1,0 +1,4 @@
+.about-container {
+    @include flex-local(space-between,row);
+    padding: 20px;
+}

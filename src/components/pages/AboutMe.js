@@ -2,8 +2,7 @@ import React from 'react';
 
 function AboutMe() {
     return (
-        <section className="c-height col-12 d-flex custom-direction justify-content-around custom-align">
-        <div className="col-12 col-lg-9 d-flex custom-direction justify-content-between custom-align">
+        <section className="about-container">
           <img
             src="./assets/media/SiteContent/DeLizoDerek_Square.jpg"
             id="avatar"
@@ -22,7 +21,6 @@ function AboutMe() {
               reality.
             </p>
           </div>
-        </div>
       </section>
     )
 }

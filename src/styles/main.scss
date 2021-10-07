@@ -1,16 +1,5 @@
 @import'./variables';
 @import'./mixins';
 @import './global.scss';
-
-.site-nav {
-  position: absolute;
-  right: 5px;
-  @include flex-local(flex-end, row);
-  @include nav-elements();
-}
-
-.nav-portfolio {
-  width: 100%;
-  @include flex-local(center, row);
-  @include nav-elements();
-}
+@import './aboutpage';
+@import './ui';
