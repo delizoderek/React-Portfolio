@@ -1,13 +1,11 @@
-import PortfolioContainer from './components/PortfolioContainer';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './style.css';
-import{ init } from 'emailjs-com';
-init("user_cdY8UJ5E1v74BCqE7bTdA");
+import React from 'react';
+import MainPage from './Components/MainPage';
+import './main.scss';
 
 function App() {
-  return (
-      <PortfolioContainer/>
-  );
+	return (
+		<MainPage/>
+	);
 }
 
 export default App;

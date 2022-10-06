@@ -1,0 +1,19 @@
+@use '../../../Styles/flex';
+
+.split-pane {
+	@include flex.container;
+	height: 100%;
+	padding-left: 100px; 
+	.pane{
+		flex: 1;
+		height: 100%;
+	}
+	.pane-left {
+		@include flex.container(column);
+		flex: 2;
+	}
+	.pane-right{
+		@include flex.container;
+		flex: 3;
+	}
+}
