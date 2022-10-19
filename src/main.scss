@@ -22,6 +22,10 @@ body {
     align-items: center;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    height: 100vh;
+    min-height: 100vh;
   }
+}
+
+#root {
+	display : flex;
 }

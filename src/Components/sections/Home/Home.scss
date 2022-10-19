@@ -3,7 +3,6 @@
 .split-pane {
 	@include flex.container;
 	height: 100%;
-	padding-left: 100px; 
 	.pane{
 		flex: 1;
 		height: 100%;
