@@ -1,49 +1,29 @@
-import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import { MailchimpForm } from "./MailchimpForm";
+import logo from "../assets/img/logo.svg";
+import navIcon1 from "../assets/img/nav-icon1.svg";
+import navIcon2 from "../assets/img/nav-icon2.svg";
+import navIcon3 from "../assets/img/nav-icon3.svg";
 
-export default function Footer() {
+export const Footer = () => {
   return (
-    <footer className="py-4 prime-bg">
-      <div
-        className="
-        col-12 col-lg-10
-        vw-100
-        d-flex
-        justify-content-around
-        custom-direction
-      "
-      >
-        <h2 className="contactlinks quin-text">509-593-0047</h2>
-        <h2 className="contactlinks">
-          <a
-            className="quin-text"
-            href="mailto:dwdelizo@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            dwdelizo@gmail.com
-          </a>
-        </h2>
-        <h2 className="contactlinks">
-          <a
-            className="quin-text"
-            href="https://www.linkedin.com/in/derek-delizo/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn
-          </a>
-        </h2>
-        <h2 className="contactlinks">
-          <a
-            className="quin-text"
-            href="https://github.com/delizoderek"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Github
-          </a>
-        </h2>
-      </div>
+    <footer className="footer">
+      <Container>
+        <Row className="align-items-center">
+          <MailchimpForm />
+          <Col size={12} sm={6}>
+            <img src={logo} alt="Logo" />
+          </Col>
+          <Col size={12} sm={6} className="text-center text-sm-end">
+            <div className="social-icon">
+              <a href="#"><img src={navIcon1} alt="Icon" /></a>
+              <a href="#"><img src={navIcon2} alt="Icon" /></a>
+              <a href="#"><img src={navIcon3} alt="Icon" /></a>
+            </div>
+            <p>Copyright 2022. All Rights Reserved</p>
+          </Col>
+        </Row>
+      </Container>
     </footer>
-  );
+  )
 }

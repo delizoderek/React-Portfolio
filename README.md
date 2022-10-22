@@ -1,23 +1,36 @@
-# React Portfolio
+# Personal Portfolio Website in React
 
-The goal of this assignment was to setup a portfolio page that shows off the projects we have worked on. The site needed to be created using HTML and CSS, specifically using the flexbox selector that was added in css3
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Resources
-- [Excalidraw](https://excalidraw.com/)
-- [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child)
-- [W3Schools](https://www.w3schools.com/Css/css_link.asp)
-- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-- [HTML5 Doctor Sectioning Flowchart](http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf)
-- [HTML for Subheadings and Headings](https://css-tricks.com/html-for-subheadings-and-headings/)
-- [ColorsWall](https://colorswall.com/)
+<img width="1266" alt="Screen Shot 2022-06-19 at 2 18 18 PM" src="https://user-images.githubusercontent.com/50160672/174933373-1ba6cadf-1c9a-48c3-aa58-984d0bd62d82.png">
 
-## [Portfolio Page](delizoderek.github.io)
+Built using:
 
-![Webpage1](./public/assets/media/ReadmeContent/Webpage1.png)
-![Webpage2](./public/assets/media/ReadmeContent/Webpage2.png)
-![Webpage3](./public/assets/media/ReadmeContent/Webpage3.png)
+- Front-end library: React
+- CSS framework: React-bootstrap
+- CSS animations library: Animate.css
 
-## My Wireframe
-Here is the wireframe I used to initially mockup the website.
+In the /personal-portfolio, you can run:
 
-![Wireframe for site](./assets/media/ReadmeContent/Portfolio_Wireframe.svg)
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
