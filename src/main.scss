@@ -16,7 +16,7 @@ body {
   height: 100vh;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  section {
+  .main-section {
     display : flex;
     justify-content: center;
     align-items: center;

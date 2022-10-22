@@ -1,0 +1,8 @@
+@use '../../../Styles/flex.scss';
+
+.filter-container {
+	@include flex.container();
+	flex-wrap : wrap;
+	height: 200px;
+	width: 100%;
+}

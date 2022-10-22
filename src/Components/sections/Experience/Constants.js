@@ -14,27 +14,6 @@ const SKILLS = {
 		relationshipBuilding : {icon: "", title: "",},
 		complexProblemSolving : {icon: "", title: "",},
   },
-	toolsTechnologies : {
-		googleCloudPlatform : {icon: "", title: "",},
-		cpp : {icon: "", title: "",},
-		unity : {icon: "", title: "",},
-		java : {icon: "", title: "",},
-		nodeJs : {icon: "", title: "",},
-		javascript : {icon: "", title: "",},
-		express : {},
-		html5 : {icon: "", title: "",},
-		matlab : {icon: "", title: "",},
-		python : {icon: "", title: "",},
-		linux : {icon: "", title: "",},
-		verilog : {icon: "", title: "",},
-		react : {icon: "", title: "",},
-		git : {icon: "", title: "",},
-		css : {icon: "", title: "",},
-		sql : {icon: "", title: "",},
-		mongoDb : {icon: "", title: "",},
-		graphQl : {icon: "", title: "",},
-		solidity : {icon: "", title: "",},
-	},
 	industryKnowledge :{
 		communityOutreach : {icon: "", title: "",},
 		clientRelationships : {icon: "", title: "",},
@@ -49,3 +28,62 @@ const SKILLS = {
 		designSpecifications : {icon: "", title: "",},
 	}
 };
+const tech = [
+	['googleCloudPlatform',{icon: "", title: "Google Cloud Platform",}],
+	['cpp',{icon: "", title: "C++",}],
+	['unity',{icon: "", title: "Unity",}],
+	['java',{icon: "", title: "Java",}],
+	['nodeJs',{icon: "", title: "NodeJs",}],
+	['javascript',{icon: "", title: "Javascript",}],
+	['express',{icon: "", title: "Express",}],
+	['graphQl',{icon: "", title: "GraphQl",}],
+	['html',{icon: "", title: "HTML",}],
+	['matlab',{icon: "", title: "Matlab",}],
+	['python',{icon: "", title: "Python",}],
+	['linux',{icon: "", title: "Linux",}],
+	['verilog',{icon: "", title: "Verilog",}],
+	['react',{icon: "", title: "React",}],
+	['git',{icon:"", title: "Git"}],
+	['css',{icon: "", title: "CSS",}],
+	['sql',{icon: "", title: "MySQL",}],
+	['mongoDb',{icon: "", title: "MongoDb",}],
+	['Web3',{icon: "", title: "Web3",}],
+]
+
+const professionalExperience = [
+	'Leverege',
+	'PACCAR',
+	'Digital Future Lab',
+	'Quantitative Skills Center',
+	'Learning Technologies',
+	'Orientation Leader',
+	"Elmo's Company",
+	'Mountlake Terrace Pool',
+]
+
+const undergraduateResearch = [
+	'Pheeni',
+	'CUAR',
+	'Crows',
+	'Holodome',
+	'E-Nable',
+]
+
+const projects = [
+	'Project Mindalae',
+	'Capstone Project',
+	'Final Bootcamp Project',
+	'Battle Brands',
+	'Games For You',
+]
+
+const hackathons = [
+	'AEC Hackathon',
+	'T-Mobile 2',
+	'T-Mobile 1',
+]
+
+export {
+	SKILLS,
+	tech
+}
