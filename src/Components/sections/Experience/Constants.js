@@ -57,7 +57,6 @@ const professionalExperience = [
 	'Quantitative Skills Center',
 	'Learning Technologies',
 	'Orientation Leader',
-	"Elmo's Company",
 	'Mountlake Terrace Pool',
 ]
 

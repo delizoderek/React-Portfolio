@@ -10,18 +10,26 @@ class Experience {
 			research : [],
 			projects : []
 		}
-		this.skills = new Map()
+		this.skills = new Map(tech)
 	}
+
+	render(){
+		return (
+			<>
+				{/* Filters Controller */}
+				<FilterController options={skills}/>
+				{/* Experience */}
+							My Experience
+			</>
+		)
+	}
+
 }
 
-export default function Wrapper() {
-	const [filters, setFilters] = useState([])
+export default function Wrapper(props) {
 	return (
 		<div id="Experience">
-			{/* Filters Controller */}
-			<FilterController options={tech}/>
-			{/* Experience */}
-            My Experience
+			<Experience {...props}/>
 		</div>
 	);
 }
