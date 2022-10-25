@@ -49,6 +49,10 @@ p, a, li, button, ul {
   text-decoration: none;
 }
 
+section {
+	min-height: 100vh;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -268,21 +272,36 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
-  margin-top: 60px;
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
 }
+.banner .button-top{
+  margin-top: 60px;
+}
+.banner .button-bottom{
+  margin-bottom: 60px;
+}
 .banner button svg {
   font-size: 25px;
-  margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
 }
-.banner button:hover svg {
+.svg-left{
+  margin-left: 10px;
+
+}
+.svg-right{
+  margin-right: 10px;
+
+}
+.banner button:hover .svg-left {
   margin-left: 25px;
 }
-.banner img {
+.banner button:hover .svg-right {
+  margin-right: 25px;
+}
+.banner .bounce {
   animation: updown 3s linear infinite;
 }
 @keyframes updown {
