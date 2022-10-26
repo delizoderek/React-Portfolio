@@ -19,10 +19,6 @@
   align-items: center;
 }
 
-.pane-left{
-	height: 100%;
-}
-
 @media (min-width: 576px) {
   .temp-container {
     max-width: 540px;
