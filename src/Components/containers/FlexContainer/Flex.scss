@@ -1,5 +1,0 @@
-@use '../../../Styles/flex.scss';
-
-.flex{
-	@include flex.container($justify: start)
-}

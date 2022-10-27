@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Checkbox from '../Checkbox'
+import Skill from '../Skill'
 import './FilterController.scss'
 export class FilterController extends Component {
 	constructor(props){
@@ -11,13 +11,12 @@ export class FilterController extends Component {
 	}
 
 	onClick = (evt) => {
-		// const {setFilters} = this.props
-		console.log(evt.target.name)
+		this.props.onClick(evt)
 	}
 
 	renderCheckboxes() {
 		const boxList = []
-		this.options.forEach((val,key) => boxList.push(<Checkbox key={key} name={val.title} onClick={this.onClick}/>))
+		this.options.forEach((val,key) => boxList.push(<Skill key={key} skill={val.title} onClick={this.onClick}/>))
 		return boxList
 	}
 

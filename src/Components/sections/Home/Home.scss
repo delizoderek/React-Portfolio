@@ -1,18 +1,18 @@
-@use '../../../Styles/flex';
+@use '../../../styles/config.scss';
 
 .split-pane {
-	@include flex.container;
+	@include config.container;
 	height: 100%;
 	.pane{
 		flex: 1;
 		height: 100%;
 	}
 	.pane-left {
-		@include flex.container(column);
+		@include config.container(column);
 		flex: 2;
 	}
 	.pane-right{
-		@include flex.container;
+		@include config.container;
 		flex: 3;
 	}
 }
