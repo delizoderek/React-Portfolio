@@ -1,4 +1,4 @@
-const SKILLS = {
+const unrelatedSkills = {
   interpersonal: {
     leadership: {
       icon: "",
@@ -28,44 +28,62 @@ const SKILLS = {
 		designSpecifications : {icon: "", title: "",},
 	}
 };
-const tech = [
+const tech = new Map ([
 	['googleCloudPlatform',{icon: "", title: "Google Cloud Platform",}],
-	['cpp',{icon: "", title: "C++",}],
+	['visualStudio',{icon: "", title: "Visual Studio",}],
+	['azure',{icon: "", title: "Azure",}],
 	['unity',{icon: "", title: "Unity",}],
+	['git',{icon:"", title: "Git"}],
+	['linux',{icon: "", title: "Linux",}],
+	['Web3',{icon: "", title: "Web3",}],
+	['jenkins',{icon: "", title: "Jenkins",}],
+	['python',{icon: "", title: "Python",}],
+	['verilog',{icon: "", title: "Verilog",}],
+] )
+
+const languages = new Map([
+	['cpp',{icon: "", title: "C++",}],
+	['cSharp',{icon: "", title: "C#",}],
 	['java',{icon: "", title: "Java",}],
-	['nodeJs',{icon: "", title: "NodeJs",}],
 	['javascript',{icon: "", title: "Javascript",}],
-	['express',{icon: "", title: "Express",}],
-	['graphQl',{icon: "", title: "GraphQl",}],
 	['html',{icon: "", title: "HTML",}],
 	['matlab',{icon: "", title: "Matlab",}],
 	['python',{icon: "", title: "Python",}],
-	['linux',{icon: "", title: "Linux",}],
 	['verilog',{icon: "", title: "Verilog",}],
-	['react',{icon: "", title: "React",}],
-	['git',{icon:"", title: "Git"}],
 	['css',{icon: "", title: "CSS",}],
 	['sql',{icon: "", title: "MySQL",}],
 	['mongoDb',{icon: "", title: "MongoDb",}],
-	['Web3',{icon: "", title: "Web3",}],
+] )
+
+const frontendTools = new Map ([
+	['react',{icon: "", title: "React",}],
+	['chai',{icon: "", title: "Chai",}],
+	['figma',{icon: "", title: "Figma",}],
+	['handlebars',{icon: "", title: "Handlebars",}],
+	['css',{icon: "", title: "CSS",}],
+] )
+
+const backendTools = new Map([
+	['nodeJs',{icon: "", title: "NodeJs",}],
+	['express',{icon: "", title: "Express",}],
+	['graphQl',{icon: "", title: "GraphQl",}],
+	['elasticSearch',{icon: "", title: "Elastic Search",}],
+	['sql',{icon: "", title: "MySQL",}],
+	['mongoDb',{icon: "", title: "MongoDb",}],
+	['postgres',{icon: "", title: "Postgres",}],
+] )
+
+const skills = [
+	['Languages', languages],
+	['Frontend Tools', frontendTools],
+	['Backend Tools', backendTools],
+	['Technologies', tech],
 ]
 
 const professionalExperience = [
 	'Leverege',
 	'PACCAR',
 	'Digital Future Lab',
-	'Quantitative Skills Center',
-	'Learning Technologies',
-	'Orientation Leader',
-	'Mountlake Terrace Pool',
-]
-
-const undergraduateResearch = [
-	'Pheeni',
-	'CUAR',
-	'Crows',
-	'Holodome',
-	'E-Nable',
 ]
 
 const projects = [
@@ -74,15 +92,15 @@ const projects = [
 	'Final Bootcamp Project',
 	'Battle Brands',
 	'Games For You',
-]
-
-const hackathons = [
-	'AEC Hackathon',
-	'T-Mobile 2',
-	'T-Mobile 1',
+	'Pheeni',
+	'CUAR',
+	'Crows',
+	'Holodome',
+	'E-Nable',
 ]
 
 export {
-	SKILLS,
-	tech
+	skills,
+	professionalExperience,
+	projects
 }

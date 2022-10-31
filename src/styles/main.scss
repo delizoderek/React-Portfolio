@@ -24,15 +24,30 @@ h1, h2, h3, h4, h5, h6 {
   line-height: normal;
 }
 
+h1 {
+	font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 0px;
+  display: block;
+}
+
+h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 25px;
+	font-weight: 700;
+}
+
 p, a, li, button, ul {
   margin: 0;
   padding: 0;
   line-height: normal;
   text-decoration: none;
-}
-
-section {
-	min-height: 100vh;
 }
 
 a:hover {
@@ -72,6 +87,10 @@ p.danger {
 	padding: 15px;
 	height: 100%;
   align-items: center;
+}
+
+.portfolio-section {
+	min-height: 100vh;
 }
 
 .flex{

@@ -9,14 +9,10 @@ function ProfileCard({ text, onClick }) {
     <div className="row">
       <div className="pane-left">
         <div className="animate__animated animate__fadeIn">
-          <h1>
-            Derek DeLizo{" "}
-            <span>
-              <h2>They/Them</h2>
-            </span>
-          </h1>
+          <h1>Derek DeLizo</h1>
+          <h2>They/Them</h2>
           <div>
-            <h2>
+            <h3>
               {`I'm a `}{" "}
               <span
                 className="txt-rotate"
@@ -24,7 +20,7 @@ function ProfileCard({ text, onClick }) {
               >
                 <span className="wrap">{text}</span>
               </span>
-            </h2>
+            </h3>
             <p>
               I’m a dynamic, motivated, results-oriented Developer who enjoys
               developing innovative solutions that drive technological
@@ -47,9 +43,9 @@ function ProfileCard({ text, onClick }) {
         </div>
       </div>
       <div className="pane-right">
-        <div className="animate__animated animate__zoomIn">
-          <img className="bounce" src={headerImg} alt="Header Img" />
-        </div>
+				<div className="circle">
+					<img src={headerImg} alt="Header Img" />
+				</div>
       </div>
     </div>
   );

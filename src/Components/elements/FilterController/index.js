@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
-import Skill from '../Skill'
+import Checkbox from '../Checkbox'
+import MultiSelectContainer from '../../containers/MultiselectContainer'
 import './FilterController.scss'
+
 export class FilterController extends Component {
 	constructor(props){
 		super(props)
@@ -14,17 +16,17 @@ export class FilterController extends Component {
 		this.props.onClick(evt)
 	}
 
-	renderCheckboxes() {
+	renderFilterSelection() {
 		const boxList = []
-		this.options.forEach((val,key) => boxList.push(<Skill key={key} skill={val.title} onClick={this.onClick}/>))
+		this.options.forEach((val,key) => boxList.push(<MultiSelectContainer key={key} label={key} options={val} onClick={this.onClick}/>))
 		return boxList
 	}
 
-	render() {
+	render() {  
 		return (
 			<section className='filter-container'>
 				{this.options?.size > 0 && 
-				this.renderCheckboxes()}
+				this.renderFilterSelection()}
 			</section>
 		)
 	}

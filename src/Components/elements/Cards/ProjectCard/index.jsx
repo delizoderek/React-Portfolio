@@ -1,8 +1,9 @@
 import React from "react";
+import './ProjectCard.scss'
 
 export const ProjectCard = ({ title, description, imgUrl }) => {
   return (
-    <div>
+    <div className="project-card">
       <div className="proj-imgbx">
         <img src={imgUrl} />
         <div className="proj-txtx">

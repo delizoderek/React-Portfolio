@@ -1,5 +1,8 @@
 @use '../../../styles/config.scss';
 
+$opacity : 0.5;
+$border-glow: 10px;
+$circle-dimensions: 60px;
 .split-pane {
 	@include config.container;
 	height: 100%;
@@ -14,5 +17,62 @@
 	.pane-right{
 		@include config.container;
 		flex: 3;
+	}
+}
+
+.circle {
+	@include config.container;
+	position: relative;
+	width: 550px;
+	height: 550px;
+}
+.circle::before{
+	content: '';
+	position: absolute;
+	top: $circle-dimensions;
+	left: $circle-dimensions;
+	right: $circle-dimensions;
+	bottom: $circle-dimensions;
+	border-radius: 50%;
+	border: $border-glow solid rgba($color: #fff, $alpha: 0.75);
+	box-shadow: 0 0 50px #0f0;
+	inset: 0 0 50px #0f0;
+	animation: animate 5s linear infinite;
+}
+
+.circle img {
+  width: 75%;
+  height: 75%;
+	border-radius: 50%;
+}
+
+@keyframes animate{
+	0%{
+		border: $border-glow solid rgba(111, 0, 255,$opacity);
+		box-shadow: 0 0 50px rgb(111, 0, 255);
+		inset: 0 0 40px rgb(111, 0, 255);
+		filter: hue-rotate(0deg)
+	}
+	25%{
+		border: $border-glow solid rgba(111, 0, 255,$opacity);
+		box-shadow: 0 0 50px rgb(111, 0, 255);
+		inset: 0 0 60px rgb(111, 0, 255);
+	}
+	50%{
+		border: $border-glow solid rgba(111, 0, 255,$opacity);
+		box-shadow: 0 0 50px rgb(111, 0, 255);
+		inset: 0 0 80px rgb(111, 0, 255);
+		filter: hue-rotate(45deg)
+	}
+	75%{
+		border: $border-glow solid rgba(111, 0, 255,$opacity);
+		box-shadow: 0 0 50px rgb(111, 0, 255);
+		inset: 0 0 60px rgb(111, 0, 255);
+	}
+	100%{
+		border: $border-glow solid rgba(111, 0, 255,$opacity);
+		box-shadow: 0 0 50px rgb(111, 0, 255);
+		inset: 0 0 40px rgb(111, 0, 255);
+		filter: hue-rotate(0deg)
 	}
 }

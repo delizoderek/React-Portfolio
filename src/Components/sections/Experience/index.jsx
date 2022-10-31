@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { tech } from './Constants'; 
+import { skills } from './Constants'; 
 import FilterController from '../../elements/FilterController';
 import { ProjectCard } from '../../elements/Cards/ProjectCard';
 import projImg1 from "../../../assets/img/project-img1.png";
@@ -7,6 +7,7 @@ import projImg2 from "../../../assets/img/project-img2.png";
 import projImg3 from "../../../assets/img/project-img3.png";
 import colorSharp2 from "../../../assets/img/color-sharp2.png";
 import 'animate.css';
+import './experience.scss'
 
 class Experience extends React.Component {
 	constructor(props){
@@ -17,7 +18,6 @@ class Experience extends React.Component {
 			research : [],
 			projects : []
 		}
-		this.skills = new Map(tech)
 	}
 
 	render(){
@@ -78,16 +78,14 @@ class Experience extends React.Component {
 	}
 
   return (
-    <section className="project" id="project">
+    <section className="project portfolio-section" id="project">
       <div className='container'>
         <div className='row'>
           <div className='column'>
               <div className="animate__animated animate__fadeIn">
                 <h2>Projects</h2>
-                <div className="flex">
-								<FilterController onClick={onClick} options={this.skills}/>
-								</div>
-                      <div className='row'>
+								<FilterController onClick={onClick} options={skills}/>
+                      <div className='projects-container'>
                         { filters.size > 0 ? 
 													projects.filter(filterFunction)
 													.map((project, index) => {

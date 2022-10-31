@@ -1,3 +1,6 @@
-.project-card {
-	
+@use '../../../styles/config.scss';
+
+.projects-container {
+	@include config.container();
+	flex-wrap: wrap;
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function Skill({ skill, onClick }) {
+function Checkbox({ label, option, onClick }) {
 	const [checked, setChecked] = useState(false)
 
 	const handleClick = ( evt ) => {
@@ -11,10 +11,10 @@ function Skill({ skill, onClick }) {
 	}
 	return (
 		<div className='flex'>
-			<input id={skill} name={skill} type={'checkbox'} onChange={handleClick} checked={checked}/>
-			<label htmlFor={skill}>{skill}</label>
+			<input id={option} name={option} type={'checkbox'} onChange={handleClick} checked={checked}/>
+			<label htmlFor={option}>{option}</label>
 		</div>
 	)
 }
 
-export default Skill
+export default Checkbox

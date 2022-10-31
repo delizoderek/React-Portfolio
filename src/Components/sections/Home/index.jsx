@@ -57,7 +57,7 @@ export default function Home() {
   };
 
   return (
-    <section className="banner" id="home">
+    <section className="portfolio-section banner" id="home">
       <div className="container">
 				<FlibbableCard>
 					<ProfileCard text={text} onClick={() => console.log('yeet')}/>

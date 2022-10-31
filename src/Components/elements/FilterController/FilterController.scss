@@ -1,7 +1,7 @@
 @use '../../../styles/config.scss';
 
 .filter-container {
-	@include config.container();
+	@include config.container($align: flex-start);
 	flex-wrap : wrap;
 	height: 200px;
 	width: 100%;
