@@ -1,18 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-function Checkbox({ label, option, onClick }) {
-	const [checked, setChecked] = useState(false)
+function Checkbox({ label, option, onClick, selected = false }) {
 
-	const handleClick = ( evt ) => {
-		setChecked(!checked)
-		if(onClick){
-			onClick(evt)
-		}
-	}
 	return (
 		<div className='flex'>
-			<input id={option} name={option} type={'checkbox'} onChange={handleClick} checked={checked}/>
-			<label htmlFor={option}>{option}</label>
+			<input id={option} name={option} type={'checkbox'} onChange={onClick} checked={selected}/>
+			<label htmlFor={option}>{label}</label>
 		</div>
 	)
 }

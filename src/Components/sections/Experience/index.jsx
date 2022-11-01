@@ -1,10 +1,7 @@
 import React, {useState} from 'react';
-import { skills } from './Constants'; 
+import { skills, professionalExperience } from './Constants';
 import FilterController from '../../elements/FilterController';
 import { ProjectCard } from '../../elements/Cards/ProjectCard';
-import projImg1 from "../../../assets/img/project-img1.png";
-import projImg2 from "../../../assets/img/project-img2.png";
-import projImg3 from "../../../assets/img/project-img3.png";
 import colorSharp2 from "../../../assets/img/color-sharp2.png";
 import 'animate.css';
 import './experience.scss'
@@ -22,47 +19,9 @@ class Experience extends React.Component {
 
 	render(){
 		const {filters} = this.state
-  const projects = [
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-			skill : ['git'],
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-			skill : ['C++'],
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-			skill : ['Javascript'],
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-			skill : ['C#'],
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-			skill : ['React'],
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-			skill : ['Express'],
-    },
-  ];
 
-	const onClick = (evt) => {
-		const filter = evt?.target?.name
+	const onClick = (target) => {
+		const filter = target
 		const oldSet = new Set(filters)
 		if(oldSet.has(filter)){
 			oldSet.delete(filter)
@@ -80,14 +39,13 @@ class Experience extends React.Component {
   return (
     <section className="project portfolio-section" id="project">
       <div className='container'>
-        <div className='row'>
-          <div className='column'>
+          <div className='projects-column'>
               <div className="animate__animated animate__fadeIn">
-                <h2>Projects</h2>
+                <h2>Experience</h2>
 								<FilterController onClick={onClick} options={skills}/>
                       <div className='projects-container'>
                         { filters.size > 0 ? 
-													projects.filter(filterFunction)
+													professionalExperience.filter(filterFunction)
 													.map((project, index) => {
                             return (
                               <ProjectCard
@@ -97,7 +55,7 @@ class Experience extends React.Component {
                             )
                           })
 												:
-                          projects.map((project, index) => {
+												professionalExperience.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -110,8 +68,6 @@ class Experience extends React.Component {
               </div>
           </div>
         </div>
-      </div>
-      <img className="background-image-right" src={colorSharp2}></img>
     </section>
   )
 	}

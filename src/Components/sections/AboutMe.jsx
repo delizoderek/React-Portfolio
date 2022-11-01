@@ -4,14 +4,12 @@ export default function AboutMe() {
 	return (
 		<div id="AboutMe">
             <p>
-            I’m a dynamic, motivated, results-oriented Developer who enjoys
-            developing innovative solutions that drive technological
-            advancement. Throughout my career, I’ve acquired and honed
-            outstanding skills in system design, project management, testing,
-            validation, research, and Agile methodologies. Further, I maintain a
-            proven track record of completing projects on-time and under budget
-            while exceeding stringent expectations.
-					</p>
+            From a young age I have always loved building stuff. My dad had a box of unused electrical components and called it the invention box.
+						I would spend hours in there taking apart components, looking at the circuit boards, and letting my imagination run wild. I used to imagine the capacitors were
+						 towers or buildings and that the circuit board was actually a city. The PCB traces were the city streets. My passion for knowledge never diminished, 
+						even as I grew older I would seek to understand how things were made. I built ramps and funboxes for skateboarding, I made an html page to watch happy tree friends, 
+						I spent hours in gamemaker learning about game development, I figured out how to make and publish a youtube video, going to college added more fuel to the fire. 
+						</p>
 					<p>
             I’ve earned respect as a diligent, analytical leader and
             collaborator who guides team members in successfully realizing

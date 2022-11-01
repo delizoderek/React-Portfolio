@@ -1,6 +1,30 @@
 @use '../../../styles/config.scss';
 
-.projects-container {
-	@include config.container();
-	flex-wrap: wrap;
+.project {
+  padding-top: 80px;
+	padding-bottom: 160px;
+  position: relative;
+  background-color: black;
+	h2 {
+		font-size: 45px;
+		font-weight: 700;
+		text-align: center;
+	}
+	p {
+		color: #B8B8B8;
+		font-size: 18px;
+		letter-spacing: 0.8px;
+		line-height: 1.5em;
+		margin: 14px auto 30px auto;
+		text-align: center;
+		width: 56%;
+	}
+	.projects-column {
+		min-width: 100%;
+	}
+	.projects-container {
+		@include config.container($align : flex-start);
+		flex-wrap: wrap;
+		max-height:150vh;
+	}
 }

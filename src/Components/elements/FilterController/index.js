@@ -6,9 +6,6 @@ import './FilterController.scss'
 export class FilterController extends Component {
 	constructor(props){
 		super(props)
-		this.state = {
-			selectedSkills : {}, // Javascript Objects have a O(1) for checking if a key exists
-		}
 		this.options = new Map(props.options)
 	}
 
@@ -18,7 +15,7 @@ export class FilterController extends Component {
 
 	renderFilterSelection() {
 		const boxList = []
-		this.options.forEach((val,key) => boxList.push(<MultiSelectContainer key={key} label={key} options={val} onClick={this.onClick}/>))
+		this.options.forEach((val,key) => boxList.push(<MultiSelectContainer key={key} label={key} options={val} handleClick={this.onClick}/>))
 		return boxList
 	}
 
