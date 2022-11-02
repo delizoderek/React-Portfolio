@@ -4,7 +4,7 @@
   padding-top: 80px;
 	padding-bottom: 160px;
   position: relative;
-  background-color: black;
+  background-color: config.$violet;
 	h2 {
 		font-size: 45px;
 		font-weight: 700;
@@ -23,7 +23,7 @@
 		min-width: 100%;
 	}
 	.projects-container {
-		@include config.container($align : flex-start);
+		@include config.container($align : flex-end);
 		flex-wrap: wrap;
 		max-height:150vh;
 	}

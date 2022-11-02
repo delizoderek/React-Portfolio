@@ -74,10 +74,4 @@ class Experience extends React.Component {
 
 }
 
-export default function Wrapper(props) {
-	return (
-		<div id="Experience">
-			<Experience {...props}/>
-		</div>
-	);
-}
+export default Experience;

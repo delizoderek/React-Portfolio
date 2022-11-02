@@ -68,7 +68,7 @@ const professionalExperience = [
   {
     title: "Leverege",
     shortDescription: "Software Engineer",
-    longDescription: "",
+    longDescription: "Working to build an IoT application that will assist hospital staff members in their day-to-day work. Working with express and redis to integrate powerbi reports into the application. Creating GCP Cloud functions using Javascript to automate tasks for the QA team.",
     imgUrl: leverege,
     skill: [
       "javascript",
@@ -89,15 +89,15 @@ const professionalExperience = [
   {
     title: "PACCAR",
     shortDescription: "Systems Engineer",
-    longDescription: "",
+    longDescription: "Ensured the micorcontrollers for Heady and Medium Duty trucks were connected properly to support communication using J1939 and LIN. Assisted in the development of the PACCAR digital display by developing features in C++. Worked on setting up the initial architecture for PACCAR's Battery Electric Trucks",
     imgUrl: paccar,
     skill: ["cpp", "git", "azure", "python", "professional"],
-    inTheNews: "",
+    inTheNews: "https://www.kenworth.com/about-us/news/zero-emissions-kenworth-t680e-battery-electric-vehicle-debuts-at-2022-ces-in-las-vegas/",
   },
   {
     title: "Digital Future Lab",
     shortDescription: "Lead Designer",
-    longDescription: "",
+    longDescription: "Managed a team of 6 using agile workflow by planning weekly sprints and creating tasks in GitLab to track project completion, documenting design processes and system specifications for Ghostlight Manor and two internal projects",
     imgUrl: digitalFutureLab,
     skill: ["git", "unity", "jira", "professional"],
     deployment: "https://store.steampowered.com/app/559250/Ghostlight_Manor/",
@@ -108,7 +108,7 @@ const professionalExperience = [
   {
     title: "Project Mindalae",
     shortDescription: "Software Engineer",
-    longDescription: "",
+    longDescription: "Project Mindalae is an informational website focused on making e-commerce more accessible and feasible for the Kichwa community and BIPOC business owners to move their businesses online. The wesbite has been translated for both english and spanish readers.",
     imgUrl: projectMindalae,
     skill: ["git", "javascript", "html", "css", "contract"],
     deployment: "https://projectmindalae.com",
@@ -117,7 +117,7 @@ const professionalExperience = [
   {
     title: "Battle Brands",
     shortDescription: "Full Stack Developer",
-    longDescription: "",
+    longDescription: "A Tamagotchi style application where you can collect and take care of different brands. Your brands gain experience the more you interact with them. Built using NodeJs, Express, and Handlebars",
     imgUrl: battleBrands,
     skill: ["git", "express", "mySql", "javascript", "html", "css", "handlebars", "project"],
     deployment: "https://battle-brands.herokuapp.com/",
@@ -126,16 +126,16 @@ const professionalExperience = [
   {
     title: "Games for You",
     shortDescription: "Full Stack Developer",
-    longDescription: "Worked in a team of 3 ",
+    longDescription: "Worked in a team of 3 to build an application that makes it easier to search for video games and board games. The application was built using HTML, CSS, Javascript, and Spectre",
     imgUrl: gamesForYou,
     skill: ["git", "html", "css", "javascript", "project"],
     deployment: "https://delizoderek.github.io/Games-for-you/",
     github: "https://github.com/delizoderek/Games-for-you/",
   },
   {
-    title: "Capstone Project",
+    title: "SMART Glove",
     shortDescription: "Software & Hardware",
-    longDescription: "Led a team of three to build a glove that assists stroke patients in their rehabilitation exercises. Designed a Printed Circuit Board meeting durability, size, and weight requirements and tested components to validate functionality. Provided the system with Bluetooth capabilities by writing firmware in C for the Arduino and software in Python for a laptop.",
+    longDescription: "Led a team of three to build a glove that assists stroke patients in their rehabilitation exercises. Provided the system with Bluetooth capabilities by writing firmware in C for the Arduino and software in Python for a laptop.",
     imgUrl: capstone,
     skill: ["git", "arduino", "cSharp", "python", "unity", "project"],
     inTheNews: "https://www.uwb.edu/news/september-2018/stroke-capstone",
@@ -144,7 +144,7 @@ const professionalExperience = [
   {
     title: "CUAR",
     shortDescription: "Software Developer",
-    longDescription: "Contributed to the development of a recording device used to monitor noise pollution generated from the 520 bridge. Assisted team members in building the recording software and designing the web application to interact with the recorder. Created a command line program in Python that enabled remote communication with a Raspberry Pi to schedule desired recording times.",
+    longDescription: "Contributed to the development of a recording device used to monitor noise pollution generated from the 520 bridge. Created a command line program in Python that enabled remote communication with a Raspberry Pi to schedule desired recording times.",
     imgUrl: cuar,
     skill: ["git", "arduino", "cSharp", "python", "unity", "project"],
     inTheNews: "https://www.uwb.edu/news/may-2018/noisy-bridges",
@@ -154,7 +154,7 @@ const professionalExperience = [
   {
     title: "Localizing Crow Vocalizations",
     shortDescription: "MATLAB Developer",
-    longDescription: "Worked with the Biology and Engineering departments to advance studies regarding the behavior and language of crows. Designed and built a User Interface for Biologists enabling audio analysis of crow calls using tools such as spectrograms, data tables, and location plots. Taught 2+ students how to use version control software to improve workflow and task-tracking.",
+    longDescription: "Worked with the Biology and Engineering departments to advance studies regarding the behavior and language of crows. Designed and built a User Interface for Biologists enabling audio analysis of crow calls using tools such as spectrograms, data tables, and location plots.",
     imgUrl: crows,
     skill: ["git", "matlab", "project"],
     inTheNews: "https://www.uwb.edu/news/june-2018/research-symposium",
@@ -163,7 +163,7 @@ const professionalExperience = [
   {
     title: "Holodome",
     shortDescription: "Software Developer",
-    longDescription: "Collaborated with two students to design, build, test, and deploy a 360-degree controller for the Holodome at the Museum of Pop Culture. Built firmware for the controller’s wireless receiver to send rotation values through serial to Unity, allowing users to interact with the 360-degree environment intuitively and in real-time.",
+    longDescription: "Collaborated with two students to design, build, test, and deploy a 360-degree controller for the Holodome at the Museum of Pop Culture. Built firmware for the controller’s wireless receiver to send rotation values to Unity, allowing users to interact with the 360-degree environment in real-time.",
     imgUrl: holodome,
     skill: ["git", "arduino", "cSharp", "unity", "project"],
     moreInfo: "https://www.holodome360.com/",
@@ -171,7 +171,7 @@ const professionalExperience = [
   {
     title: "Raptor Reloaded Manual",
     shortDescription: "Software Developer",
-    longDescription: "",
+    longDescription: "Created an augmented reality android application with unity that acts as an assembly manual for the E-nable Raptor Reloaded Prosthetic Hand. Created assembly animations in Autodesk Maya to assist users in following the steps.",
     imgUrl: eNable,
     skill: ["git", "vuforia", "cSharp", "unity", "project"],
     inTheNews:

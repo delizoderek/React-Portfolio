@@ -2,7 +2,6 @@ import React from "react";
 import headerImg from "../../../assets/img/DerekHeadshot.svg";
 import { ReactComponent as RightArrow } from "../../../assets/img/right-arrow-no-circle.svg";
 import "animate.css";
-import "./banner.css";
 
 function ProfileCard({ text, onClick }) {
   return (

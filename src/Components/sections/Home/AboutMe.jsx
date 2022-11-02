@@ -2,7 +2,6 @@ import React from "react";
 import headerImg from "../../../assets/img/DerekAnimatedHeadshot.gif";
 import { ReactComponent as LeftArrow } from "../../../assets/img/left-arrow-no-circle.svg";
 import "animate.css";
-import "./banner.css";
 
 function AboutMe({ onClick, text }) {
   return (
@@ -18,7 +17,7 @@ function AboutMe({ onClick, text }) {
           {"Back"}
         </button>
         <article>
-          <h1>My Story</h1>
+          <h1 className="title">About Me</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry&apos;s standard dummy text
@@ -34,9 +33,7 @@ function AboutMe({ onClick, text }) {
         </article>
       </div>
       <div className="pane-right">
-        <div className="animate__animated animate__zoomIn">
           <img src={headerImg} alt="Header Img" />
-        </div>
       </div>
     </div>
   );

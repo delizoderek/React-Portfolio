@@ -3,7 +3,6 @@ import FlibbableCard from "../../elements/Cards/FlibbableCard";
 import ProfileCard from './ProfileCard'
 import AboutMe from "./AboutMe";
 import "animate.css";
-import "./banner.css"
 import './Home.scss';
 
 export default function Home() {
