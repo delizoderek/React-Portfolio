@@ -12,10 +12,10 @@ function ProfileCard({ text, onClick }) {
           <h2>They/Them</h2>
           <div>
             <h3>
-              {`I'm a `}{" "}
+              {`I'm `}{" "}
               <span
                 className="txt-rotate"
-                data-rotate='[ "Fullstack Developer", "System Engineer", "Electrical Engineer" ]'
+                data-rotate='[ "a Fullstack Developer", "a System Engineer", "an Electrical Engineer" ]'
               >
                 <span className="wrap">{text}</span>
               </span>

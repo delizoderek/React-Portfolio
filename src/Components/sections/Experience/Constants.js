@@ -29,15 +29,19 @@ const tech = new Map([
   ["javascript", "Javascript"],
   ["jenkins","Jenkins"],
   ["matlab", "Matlab"],
-  ["mongoDb", "MongoDb"],
+  // ["mongoDb", "MongoDb"],
   ["nodeJs", "NodeJs"],
   ["postgres", "Postgres"],
   ["python","Python"],
   ["react", "React"],
   ["redis", "Redis"],
-  ["sql", "MySQL"],
+  ["mySql", "MySQL"],
   ["unity","Unity"],
 	["visualStudio","Visual Studio"],
+	["vuforia","Vuforia"],
+	["leadership","Leadership"],
+	["projectPlanning","Project Planning"],
+	["vuforia","Vuforia"],
 ]);
 
 const professionalExperience = [
@@ -68,7 +72,7 @@ const professionalExperience = [
     shortDescription: "Systems Engineer",
     longDescription: "Ensured the micorcontrollers for Heady and Medium Duty trucks were connected properly to support communication using J1939 and LIN. Assisted in the development of the PACCAR digital display by developing features in C++. Worked on setting up the initial architecture for PACCAR's Battery Electric Trucks",
     imgUrl: paccar,
-    skill: ["cpp", "git", "azure", "python", "professional"],
+    skill: ["cpp", "git", "azure", "jenkins", "python", "professional"],
     inTheNews: "https://www.kenworth.com/about-us/news/zero-emissions-kenworth-t680e-battery-electric-vehicle-debuts-at-2022-ces-in-las-vegas/",
   },
   {
@@ -114,7 +118,7 @@ const professionalExperience = [
     shortDescription: "Software & Hardware",
     longDescription: "Led a team of three to build a glove that assists stroke patients in their rehabilitation exercises. Provided the system with Bluetooth capabilities by writing firmware in C for the Arduino and software in Python for a laptop.",
     imgUrl: capstone,
-    skill: ["git", "arduino", "cSharp", "python", "unity", "project"],
+    skill: ["git", "arduino", "cSharp", "python", "unity", "leadership", "project"],
     inTheNews: "https://www.uwb.edu/news/september-2018/stroke-capstone",
     github: "https://github.com/delizoderek/SMART-Glove",
   },
@@ -146,7 +150,7 @@ const professionalExperience = [
     moreInfo: "https://www.holodome360.com/",
   },
   {
-    title: "Raptor Reloaded Manual",
+    title: "Raptor Reloaded Assembly Manual",
     shortDescription: "Software Developer",
     longDescription: "Created an augmented reality android application with unity that acts as an assembly manual for the E-nable Raptor Reloaded Prosthetic Hand. Created assembly animations in Autodesk Maya to assist users in following the steps.",
     imgUrl: eNable,
@@ -159,7 +163,7 @@ const professionalExperience = [
     shortDescription: "Project Organizer",
     longDescription: "Lead a group of 15 volunteers to refurbish the wood on the picnic tables at Brier Park. Was responsible for coming up with the project, getting it approved by the city, working with local businesses to get materials donated, and scheduling when the project would be executed.",
     imgUrl: eagleScout,
-    skill: ["project"],
+    skill: ["projectPlanning","leadership","project"],
     inTheNews:
       "https://mltnews.com/eagle-scout-candidate-upgrades-brier-park-picnic-tables/",
   },
