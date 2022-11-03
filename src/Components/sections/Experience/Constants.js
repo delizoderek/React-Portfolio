@@ -72,7 +72,7 @@ const professionalExperience = [
     shortDescription: "Systems Engineer",
     longDescription: "Ensured the micorcontrollers for Heady and Medium Duty trucks were connected properly to support communication using J1939 and LIN. Assisted in the development of the PACCAR digital display by developing features in C++. Worked on setting up the initial architecture for PACCAR's Battery Electric Trucks",
     imgUrl: paccar,
-    skill: ["cpp", "git", "azure", "jenkins", "python", "professional"],
+    skill: ["cpp", "git", "azure", "jenkins", "python", "visualStudio", "professional"],
     inTheNews: "https://www.kenworth.com/about-us/news/zero-emissions-kenworth-t680e-battery-electric-vehicle-debuts-at-2022-ces-in-las-vegas/",
   },
   {

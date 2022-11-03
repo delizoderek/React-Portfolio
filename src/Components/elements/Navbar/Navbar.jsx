@@ -1,6 +1,6 @@
 import React from 'react';
 import NavItem from './NavItem';
-import './Navbar.module.scss';
+import './Navbar.scss';
 
 export default function Navbar (props) {
 

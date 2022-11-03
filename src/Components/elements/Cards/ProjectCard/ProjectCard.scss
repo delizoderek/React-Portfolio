@@ -81,6 +81,10 @@ $img-shrink-height : 100px;
 			padding: 20px 40px 20px 40px;
 			transition: 0.75s;
 			opacity: 0;
+			.wave-divider{
+				position: absolute;
+				top: -20px;
+			}
 			p{
 				width:100%;
 				margin: 0;

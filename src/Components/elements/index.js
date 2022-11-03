@@ -1,15 +1,15 @@
-import Cards from './Cards'
+import ProjectCard from './Cards/ProjectCard'
+import FlippableCard from './Cards/FlibbableCard'
 import Checkbox from './Checkbox'
 import FilterController from './FilterController'
 import FilterPills from './FilterPills'
-import Modal from './Modal'
-import Navbar from './Navbar'
+import Navbar from './Navbar/Navbar'
 
 export {
-	Cards,
+	ProjectCard,
+	FlippableCard,
 	Checkbox,
 	FilterController,
 	FilterPills,
-	Modal,
 	Navbar
 }
