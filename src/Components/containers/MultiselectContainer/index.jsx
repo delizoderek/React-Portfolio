@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Checkbox from '../../elements/Checkbox'
+import './MultiSelectContainer.scss'
+
 
 function MultiSelectContainer({label,options, handleClick}) {
 	const [ selected, setSelected ] = useState({})
@@ -25,13 +27,10 @@ function MultiSelectContainer({label,options, handleClick}) {
 	}, [])
 
 	const checkboxes = []
-	options.forEach((val, key) => checkboxes.push(<Checkbox key={`multi-${key}`} selected={selected[key]} label={val.title} option={key} onClick={handleMultiselectClick}/>));
+	options.forEach((val, key) => checkboxes.push(<Checkbox key={`multi-${key}`} selected={selected[key]} option={key} onClick={handleMultiselectClick} label={val} data-label={val}/>));
 	return (
 		<div className='multiselect'>
-			<label>{label}</label>
-			<div className='scroll'>
 				{checkboxes}
-			</div>
 		</div>
 	)
 }

@@ -13,17 +13,11 @@ export class FilterController extends Component {
 		this.props.onClick(evt)
 	}
 
-	renderFilterSelection() {
-		const boxList = []
-		this.options.forEach((val,key) => boxList.push(<MultiSelectContainer key={key} label={key} options={val} handleClick={this.onClick}/>))
-		return boxList
-	}
-
 	render() {  
 		return (
 			<section className='filter-container'>
 				{this.options?.size > 0 && 
-				this.renderFilterSelection()}
+				<MultiSelectContainer key={'Tech'} options={this.options} handleClick={this.onClick}/>}
 			</section>
 		)
 	}

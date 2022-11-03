@@ -4,10 +4,10 @@ import { ReactComponent as RightArrow } from "../../../assets/img/right-arrow-no
 import "animate.css";
 
 function ProfileCard({ text, onClick }) {
+	const isMobile = true;
   return (
     <div className="row">
       <div className="pane-left">
-        <div className="animate__animated animate__fadeIn">
           <h1>Derek DeLizo</h1>
           <h2>They/Them</h2>
           <div>
@@ -39,12 +39,9 @@ function ProfileCard({ text, onClick }) {
               />
             </button>
           </div>
-        </div>
       </div>
       <div className="pane-right">
-				<div className="circle">
 					<img src={headerImg} alt="Header Img" />
-				</div>
       </div>
     </div>
   );

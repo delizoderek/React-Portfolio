@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
-import { skills, professionalExperience } from './Constants';
+import { tech, professionalExperience } from './Constants';
 import FilterController from '../../elements/FilterController';
 import { ProjectCard } from '../../elements/Cards/ProjectCard';
-import colorSharp2 from "../../../assets/img/color-sharp2.png";
 import 'animate.css';
 import './experience.scss'
 
@@ -42,7 +41,7 @@ class Experience extends React.Component {
           <div className='projects-column'>
               <div className="animate__animated animate__fadeIn">
                 <h2>Experience</h2>
-								<FilterController onClick={onClick} options={skills}/>
+								<FilterController onClick={onClick} options={tech}/>
                       <div className='projects-container'>
                         { filters.size > 0 ? 
 													professionalExperience.filter(filterFunction)

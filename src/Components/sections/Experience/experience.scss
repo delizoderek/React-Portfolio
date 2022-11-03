@@ -25,6 +25,5 @@
 	.projects-container {
 		@include config.container($align : flex-end);
 		flex-wrap: wrap;
-		max-height:150vh;
 	}
 }

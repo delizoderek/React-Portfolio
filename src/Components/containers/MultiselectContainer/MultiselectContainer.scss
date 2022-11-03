@@ -1,0 +1,66 @@
+@use "../../../styles/config.scss";
+
+$animation-transition: all 0.2s ease-in;
+$font-size-filter: 20px; 
+.multiselect {
+  @include config.container;
+  flex-wrap: wrap;
+  width: 100%;
+  .checkbox-container {
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+		overflow: hidden;
+		label {
+			visibility: hidden;
+			font-size: $font-size-filter;
+			font-weight: 600;
+		}
+    .checkbox {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -o-appearance: none;
+      appearance: none;
+      &::before {
+				position: absolute;
+        display: block;
+        content: "";
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+				padding: 10px 20px;
+				text-align: center;
+				text-decoration: none;
+				margin: 4px 2px;
+				cursor: pointer;
+				border-radius: 16px;
+				background: config.$orange;
+        -webkit-transition: $animation-transition;
+        -moz-transition: $animation-transition;
+        -ms-transition: $animation-transition;
+        -o-transition: $animation-transition;
+        transition: $animation-transition;
+      }
+			&::after{
+				position: absolute;
+				left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+				width: 100%;
+				height: 100%;
+				content: attr(data-label);
+				color: config.$magenta;
+				padding: 10px;
+    		border-radius: 5px;
+				font-size: $font-size-filter;
+				font-weight: 600;
+			}
+      &:checked:before {
+        background: config.$yellow-orange;
+        border-radius: 5px;
+      }
+    }
+  }
+}
