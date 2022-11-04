@@ -12,9 +12,9 @@ export default function Home() {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   const toRotate = [
-    "Fullstack Developer",
-    "System Engineer",
-    "Electrical Engineer",
+    "a Fullstack Developer",
+    "a Systems Engineer",
+    "an Electrical Engineer",
   ];
   const period = 2000;
 

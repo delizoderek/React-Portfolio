@@ -65,8 +65,12 @@ $circle-dimensions: 60px;
 }
 .svg-right{
   margin-right: 10px;
-
 }
+
+.svg-down{
+  transform: rotate(90deg);
+}
+
 .banner button:hover .svg-left {
   margin-left: 25px;
 }
@@ -94,6 +98,11 @@ $circle-dimensions: 60px;
 .title {
 	margin-bottom: 20px;
 }
+
+// .title-card{
+// 	width: ;
+// 	height: ;
+// }
 
 .about-me{
 	display: flex;

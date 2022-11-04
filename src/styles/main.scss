@@ -1,3 +1,4 @@
+@use '../styles/config.scss';
 * {
   margin: 0;
   padding: 0;
@@ -80,13 +81,33 @@ p.danger {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+	@include config.sm {
+			max-width: 540px;
+	}
+	@include config.md{
+			max-width: 720px;
+	}
+	@include config.lg{
+			max-width: 960px;
+	}
+	@include config.xl{
+			max-width: 1140px;
+	}
+	@include config.xxl{
+		max-width: 1320px;
+	}
 }
 
 .row {
   display: flex;
+	flex-direction: row;
 	padding: 15px;
 	height: 100%;
   align-items: center;
+	@include config.md{
+		flex-direction: column-reverse;
+		height: 100vh;
+	}
 }
 
 .portfolio-section {
@@ -102,65 +123,31 @@ p.danger {
 	flex-direction: column;
 }
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-
-	.pane-left {
+.pane-left{
+	@include config.md {
 		flex: 0 0 auto;
 		width : 100%
 	}
+	@include config.lg {
+			flex: 0 0 auto;
+			width : 58.333%;
+	}
+}
 
-  .pane-right {
+.pane-right{
+	@include config.md {
 		flex: 0 0 auto;
 		width : 100%
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-
-  .pane-left {
-		flex: 0 0 auto;
-		width : 50%;
 	}
-
-  .pane-right {
-		flex: 0 0 auto;
-		width : 50%
-  }
-
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-
-  .pane-left {
-		flex: 0 0 auto;
-		width : 58.333%
-	}
-
-  .pane-right {
+	@include config.lg {
 		flex: 0 0 auto;
 		width: 41.667%;
-  }
+	}
 }
 
 @media (min-width: 1400px) {
   .container {
-    max-width: 1320px;
+    
   }
 }
 
