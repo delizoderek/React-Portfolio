@@ -1,6 +1,7 @@
 import React from 'react';
-// import MainPage from './Components/MainPage';
+import CanvasBackground from './Components/elements/CanvasBackground';
 import { Home, Experience } from './Components/sections';
+import ScrollingContainer from './Components/containers/ScrollingContainer'
 import 'normalize.css'
 import './styles/app.global.scss';
 import './styles/App.css'
@@ -8,8 +9,11 @@ import './styles/App.css'
 function App() {
 	return (
 		<div className="App">
-			<Home/>
-			<Experience/>
+			<CanvasBackground/>
+			<ScrollingContainer>
+				<Home/>
+				<Experience/>
+			</ScrollingContainer>
 		</div>
 	);
 }

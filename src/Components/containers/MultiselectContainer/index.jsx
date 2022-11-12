@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Checkbox from '../../elements/Checkbox'
-import './MultiSelectContainer.scss'
+import './MultiselectContainer.scss'
 
 
 function MultiSelectContainer({label,options, handleClick}) {

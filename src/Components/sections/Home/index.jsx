@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import FlibbableCard from "../../elements/Cards/FlibbableCard";
 import ProfileCard from './ProfileCard'
 import AboutMe from "./AboutMe";
 import "animate.css";
