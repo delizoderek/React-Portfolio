@@ -10,6 +10,7 @@ $font-size-filter: 20px;
     position: relative;
     padding: 10px;
     border-radius: 5px;
+		margin: 3px;
 		overflow: hidden;
 		label {
 			visibility: hidden;
@@ -35,7 +36,7 @@ $font-size-filter: 20px;
 				margin: 4px 2px;
 				cursor: pointer;
 				border-radius: 16px;
-				background: config.$orange;
+				background: linear-gradient(config.$yellow-orange,config.$orange);
         -webkit-transition: $animation-transition;
         -moz-transition: $animation-transition;
         -ms-transition: $animation-transition;
@@ -43,24 +44,27 @@ $font-size-filter: 20px;
         transition: $animation-transition;
       }
 			&::after{
-				position: absolute;
-				left: 0;
-        right: 0;
-        bottom: 0;
-        top: 0;
+				@include config.absolute-center;
 				width: 100%;
 				height: 100%;
 				content: attr(data-label);
-				color: config.$magenta;
+				color: white;
 				padding: 10px;
     		border-radius: 5px;
 				font-size: $font-size-filter;
-				font-weight: 600;
+				font-weight: 400;
+        -webkit-transition: $animation-transition;
+        -moz-transition: $animation-transition;
+        -ms-transition: $animation-transition;
+        -o-transition: $animation-transition;
+        transition: $animation-transition;
 			}
       &:checked:before {
-        background: config.$yellow-orange;
         border-radius: 5px;
       }
+			&:checked:after{
+				background: config.$yellow-orange;
+			}
     }
   }
 }

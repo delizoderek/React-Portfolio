@@ -1,7 +1,6 @@
 import React from "react";
 
 function Checkbox({ label, option, onClick, selected = false, ...rest }) {
-  console.log(rest);
   return (
     <div className="checkbox-container">
 			<label htmlFor={option}>{label}</label>

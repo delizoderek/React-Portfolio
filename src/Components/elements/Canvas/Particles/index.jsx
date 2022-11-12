@@ -9,7 +9,6 @@ function Particles() {
 		if(!canvas){ return;}
 		const context = canvas.getContext('2d')
 		if(!context){ return;}
-		console.log(context)
 		context.fillStyle = 'red'
 		context.fillRect(0,0,100,100)
 	},[])

@@ -52,3 +52,11 @@
 	flex: 0 0 auto;
 	width : percentage( calc(1 / $count) );
 }
+
+@mixin absolute-center {
+	position: absolute;
+	@include container;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}

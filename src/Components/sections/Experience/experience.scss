@@ -4,7 +4,8 @@
   padding-top: 80px;
 	padding-bottom: 160px;
   position: relative;
-  background-color: config.$violet;
+  background: radial-gradient(ellipse at top, config.$purple, transparent),
+										radial-gradient(ellipse at bottom, config.$violet, transparent);
 	h2 {
 		font-size: 45px;
 		font-weight: 700;
@@ -23,7 +24,7 @@
 		min-width: 100%;
 	}
 	.projects-container {
-		@include config.container($align : flex-end);
-		flex-wrap: wrap;
+			@include config.container($align : flex-end);
+			flex-wrap: wrap;
 	}
 }

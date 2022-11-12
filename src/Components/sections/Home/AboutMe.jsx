@@ -1,5 +1,5 @@
 import React from "react";
-import headerImg from "../../../assets/img/DerekAnimatedHeadshot.gif";
+import headerImg from "../../../assets/img/DerekAnimatedHeadshot.webp";
 import { ReactComponent as LeftArrow } from "../../../assets/img/left-arrow-no-circle.svg";
 import "animate.css";
 

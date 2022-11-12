@@ -1,11 +1,11 @@
-import leverege from "../../../assets/img/experienceAssets/Leverege.svg";
-import paccar from "../../../assets/img/experienceAssets/Paccar.svg";
-import digitalFutureLab from "../../../assets/img/experienceAssets/DigitalFutureLab.svg";
+import leverege from "../../../assets/img/experienceAssets/Leverege.webp";
+import paccar from "../../../assets/img/experienceAssets/Paccar.webp";
+import digitalFutureLab from "../../../assets/img/experienceAssets/DigitalFutureLab.webp";
 import capstone from "../../../assets/img/experienceAssets/CapstoneProject.jpg";
 import crows from "../../../assets/img/experienceAssets/CrowGroup.jpg";
 import holodome from "../../../assets/img/experienceAssets/Holodome.jpg";
 import eNable from "../../../assets/img/experienceAssets/RaptorReloaded.jpg";
-import battleBrands from "../../../assets/img/experienceAssets/battle-brands_interaction.gif";
+import battleBrands from "../../../assets/img/experienceAssets/battle-brands_interaction.webp";
 import gamesForYou from "../../../assets/img/experienceAssets/GamesForYou.jpg";
 import cuar from "../../../assets/img/experienceAssets/cuar.jpg";
 import eagleScout from "../../../assets/img/experienceAssets/EagleScout.jpg";
@@ -62,6 +62,7 @@ const professionalExperience = [
       "chai",
       "figma",
 			"postgres",
+			"googleCloudPlatform",
       "professional",
     ],
     inTheNews:

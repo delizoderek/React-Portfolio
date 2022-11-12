@@ -1,195 +1,271 @@
-@use '../../../styles/config.scss';
+@use "../../../styles/config.scss";
 
-$opacity : 0.5;
+$opacity: 0.5;
 $border-glow: 10px;
 $circle-dimensions: 60px;
 
 .banner {
-	@include config.container;
+  @include config.container;
   margin-top: 0;
-  padding: 0px 0 100px 0;
-  background-image: url('../../../assets/img/banner-bg.png');
+  padding: 0px;
+  background-image: url("../../../assets/img/banner-bg.png");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  @include config.lg {
+    padding: 0px 0 100px 0;
+  }
+  .tagline {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 8px 10px;
+    background: linear-gradient(
+      90.21deg,
+      rgba(170, 54, 124, 0.5) -5.91%,
+      rgba(74, 47, 189, 0.5) 111.58%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    margin-bottom: 16px;
+    display: inline-block;
+  }
+  h1 {
+    font-size: 48px;
+		text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+		margin-top: 10px;
+    display: block;
+		@include config.lg{
+			margin-top: 0px;
+			font-size: 65px;
+			text-align: left;
+		}
+  }
+  h2 {
+		font-size: 32px;
+		text-align: center;
+		margin-top: 5px;
+    margin-bottom: 10px;
+		@include config.lg{
+			font-size: 45px;
+			text-align: left;
+			margin-top: 0px;
+			margin-bottom: 20px;
+		}
+  }
+  h3 {
+		font-size: 22px;
+		font-weight: 700;
+		text-align: center;
+		@include config.lg{
+			font-size: 18px;
+			text-align: left;
+		}
+  }
+  p {
+    color: #b8b8b8;
+    font-size: 18px;
+		text-align: center;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+		@include config.lg{
+			text-align: left;
+		}
+  }
+  button {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    display: flex;
+    align-items: center;
+    svg {
+      font-size: 25px;
+      transition: 0.3s ease-in-out;
+      line-height: 1;
+    }
+		&:hover{
+			.svg-left {
+				margin-left: 25px;
+			}
+			.svg-right {
+				margin-right: 25px;
+			}
+		}
+  }
+  .button-top {
+    margin-top: 60px;
+  }
+  .button-bottom {
+		margin-bottom: 10px;
+		@include config.lg{
+			margin-bottom: 60px;
+		}
+  }
+  .bounce {
+    animation: updown 3s linear infinite;
+  }
 }
-.banner .tagline {
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 20px;
-  margin-bottom: 16px;
-  display: inline-block;
-}
-.banner h1 {
-  font-size: 65px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  line-height: 1;
-  display: block;
-}
-.banner h2{
-  margin-bottom: 20px;
-}
-.banner p {
-  color: #B8B8B8;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  width: 96%;
-}
-.banner button {
-  color: #fff;
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 0.8px;
-  display: flex;
-  align-items: center;
-}
-.banner .button-top{
-  margin-top: 60px;
-}
-.banner .button-bottom{
-  margin-bottom: 60px;
-}
-.banner button svg {
-  font-size: 25px;
-  transition: 0.3s ease-in-out;
-  line-height: 1;
-}
-.svg-left{
+.svg-left {
   margin-left: 10px;
-
 }
-.svg-right{
+.svg-right {
   margin-right: 10px;
 }
 
-.svg-down{
+.svg-down {
   transform: rotate(90deg);
 }
 
-.banner button:hover .svg-left {
-  margin-left: 25px;
-}
-.banner button:hover .svg-right {
-  margin-right: 25px;
-}
-.banner .bounce {
-  animation: updown 3s linear infinite;
-}
 @keyframes updown {
-    0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(-20px);
-    }
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
 
 .title {
-	margin-bottom: 20px;
+  margin-bottom: 5px;
+	@include config.lg{
+		margin-bottom: 20px;
+	}
 }
 
-// .title-card{
-// 	width: ;
-// 	height: ;
-// }
+.wrapper {
+  height: 90vh;
+  perspective: 1000px;
+  padding: 0 15px;
+  @include config.lg {
+    height: 585px;
+  }
+  .card {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    .face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+    }
+    .front {
+      @include config.container;
+    }
+    .back {
+      @include config.container;
+      transform: rotateY(180deg);
+    }
+  }
+  .card-flipped {
+    transform: rotateY(180deg);
+  }
+}
 
-.about-me{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: flex-start;
-	height: 100%;
+.about-me {
+	@include config.container($direction: column-reverse, $justify: flex-start, $align:flex-start);
+	@include config.lg{
+		flex-direction: column
+	}
 }
 
 .pane-right {
-	@include config.container;
-	img {
-		border-radius: 20px;
-		box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35)
-	}
+  @include config.container;
+  img {
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+    @include config.lg {
+      width: 100%;
+    }
+  }
 }
 
 .split-pane {
-	@include config.container;
-	height: 100%;
-	.pane{
-		flex: 1;
-		height: 100%;
-	}
-	.pane-left {
-		@include config.container(column);
-		flex: 2;
-	}
-	.pane-right{
-		@include config.container;
-		flex: 3;
-	}
+  @include config.container;
+  height: 100%;
+  .pane {
+    flex: 1;
+    height: 100%;
+  }
+  .pane-left {
+    @include config.container(column);
+    flex: 2;
+  }
+  .pane-right {
+    @include config.container;
+    flex: 3;
+  }
 }
 
 .circle {
-	@include config.container;
-	position: relative;
-	width: 550px;
-	height: 550px;
+  @include config.container;
+  position: relative;
+  width: 550px;
+  height: 550px;
 }
-.circle::before{
-	content: '';
-	position: absolute;
-	top: $circle-dimensions;
-	left: $circle-dimensions;
-	right: $circle-dimensions;
-	bottom: $circle-dimensions;
-	border-radius: 50%;
-	border: $border-glow solid rgba($color: #fff, $alpha: 0.75);
-	box-shadow: 0 0 50px #0f0;
-	inset: 0 0 50px #0f0;
-	animation: animate 5s linear infinite;
+.circle::before {
+  content: "";
+  position: absolute;
+  top: $circle-dimensions;
+  left: $circle-dimensions;
+  right: $circle-dimensions;
+  bottom: $circle-dimensions;
+  border-radius: 50%;
+  border: $border-glow solid rgba($color: #fff, $alpha: 0.75);
+  box-shadow: 0 0 50px #0f0;
+  inset: 0 0 50px #0f0;
+  animation: animate 5s linear infinite;
 }
 
 .circle img {
   width: 75%;
   height: 75%;
-	border-radius: 50%;
+  border-radius: 50%;
 }
 
-@keyframes animate{
-	0%{
-		border: $border-glow solid rgba(111, 0, 255,$opacity);
-		box-shadow: 0 0 50px rgb(111, 0, 255);
-		inset: 0 0 40px rgb(111, 0, 255);
-		filter: hue-rotate(0deg)
-	}
-	25%{
-		border: $border-glow solid rgba(111, 0, 255,$opacity);
-		box-shadow: 0 0 50px rgb(111, 0, 255);
-		inset: 0 0 60px rgb(111, 0, 255);
-	}
-	50%{
-		border: $border-glow solid rgba(111, 0, 255,$opacity);
-		box-shadow: 0 0 50px rgb(111, 0, 255);
-		inset: 0 0 80px rgb(111, 0, 255);
-		filter: hue-rotate(45deg)
-	}
-	75%{
-		border: $border-glow solid rgba(111, 0, 255,$opacity);
-		box-shadow: 0 0 50px rgb(111, 0, 255);
-		inset: 0 0 60px rgb(111, 0, 255);
-	}
-	100%{
-		border: $border-glow solid rgba(111, 0, 255,$opacity);
-		box-shadow: 0 0 50px rgb(111, 0, 255);
-		inset: 0 0 40px rgb(111, 0, 255);
-		filter: hue-rotate(0deg)
-	}
+@keyframes animate {
+  0% {
+    border: $border-glow solid rgba(111, 0, 255, $opacity);
+    box-shadow: 0 0 50px rgb(111, 0, 255);
+    inset: 0 0 40px rgb(111, 0, 255);
+    filter: hue-rotate(0deg);
+  }
+  25% {
+    border: $border-glow solid rgba(111, 0, 255, $opacity);
+    box-shadow: 0 0 50px rgb(111, 0, 255);
+    inset: 0 0 60px rgb(111, 0, 255);
+  }
+  50% {
+    border: $border-glow solid rgba(111, 0, 255, $opacity);
+    box-shadow: 0 0 50px rgb(111, 0, 255);
+    inset: 0 0 80px rgb(111, 0, 255);
+    filter: hue-rotate(45deg);
+  }
+  75% {
+    border: $border-glow solid rgba(111, 0, 255, $opacity);
+    box-shadow: 0 0 50px rgb(111, 0, 255);
+    inset: 0 0 60px rgb(111, 0, 255);
+  }
+  100% {
+    border: $border-glow solid rgba(111, 0, 255, $opacity);
+    box-shadow: 0 0 50px rgb(111, 0, 255);
+    inset: 0 0 40px rgb(111, 0, 255);
+    filter: hue-rotate(0deg);
+  }
 }

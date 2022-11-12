@@ -11,6 +11,7 @@ export default function Home() {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
+	const [flipped, setFlipped] = useState(false)
   const toRotate = [
     "a Fullstack Developer",
     "a Systems Engineer",
@@ -55,13 +56,21 @@ export default function Home() {
     }
   };
 
+	const handleClick = () => setFlipped(!flipped)
+
   return (
     <section className="portfolio-section banner" id="home">
       <div className="container">
-				<FlibbableCard>
-					<ProfileCard text={text} onClick={() => console.log('yeet')}/>
-					<AboutMe/>
-				</FlibbableCard>
+				<div className="wrapper">
+					<div className={`card ${flipped ? 'card-flipped' : ''}`}>
+						<div className="face front">
+							<ProfileCard text={text} onClick={handleClick}/>
+						</div>
+						<div className="face back">
+							<AboutMe onClick={handleClick}/>
+						</div>
+					</div>
+				</div>
       </div>
     </section>
   );

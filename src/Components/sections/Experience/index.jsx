@@ -35,11 +35,9 @@ class Experience extends React.Component {
     <section className="project portfolio-section" id="project">
       <div className='container'>
           <div className='projects-column'>
-              <div className="animate__animated animate__fadeIn">
                 <h2>Experience</h2>
 								<FilterController onClick={onClick} options={tech}/>
                 <ProjectsContainer filters={filters} items={professionalExperience}/>
-              </div>
           </div>
         </div>
     </section>
