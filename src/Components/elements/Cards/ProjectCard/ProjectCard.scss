@@ -51,7 +51,8 @@ $content-shrink-time: 0.2s;
     @include config.container;
     width: 100%;
     height: 315px;
-    background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+    // background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+		background: linear-gradient(190deg, rgba(74,2,79,1) 0%, rgba(175,0,255,1) 51%, rgba(255,145,0,1) 100%);
     overflow: hidden;
     transition: 0.5s;
     img {

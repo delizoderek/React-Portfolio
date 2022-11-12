@@ -1,30 +1,59 @@
-@use '../../../styles/config.scss';
+@use "../../../styles/config.scss";
+$top-radius: 25%;
 
 .project {
+	// border-top-left-radius: $top-radius;
+	// border-top-right-radius: $top-radius;
   padding-top: 80px;
-	padding-bottom: 160px;
+  padding-bottom: 160px;
   position: relative;
-  background: radial-gradient(ellipse at top, config.$purple, transparent),
-										radial-gradient(ellipse at bottom, config.$violet, transparent);
-	h2 {
-		font-size: 45px;
-		font-weight: 700;
-		text-align: center;
-	}
-	p {
-		color: #B8B8B8;
-		font-size: 18px;
-		letter-spacing: 0.8px;
-		line-height: 1.5em;
-		margin: 14px auto 30px auto;
-		text-align: center;
-		width: 56%;
-	}
-	.projects-column {
-		min-width: 100%;
-	}
-	.projects-container {
-			@include config.container($align : flex-end);
-			flex-wrap: wrap;
-	}
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  background-image: radial-gradient(
+    70% 70% at 50% 50%,
+    #0d5ef4 1%,
+    #002c7fff 100%
+  );
+  h2 {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+  }
+  p {
+    color: #b8b8b8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px auto 30px auto;
+    text-align: center;
+    width: 56%;
+  }
+  .projects-column {
+    min-width: 100%;
+  }
+  .projects-container {
+    @include config.container($align: flex-end);
+    flex-wrap: wrap;
+  }
 }
+
+.wave-divider {
+	position: absolute;
+	top: -100px;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
+}
+
+.wave-divider svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 104px;
+}
+
+// .wave-divider .shape-fill {
+// 	@include config.gradient(90deg)
+// }

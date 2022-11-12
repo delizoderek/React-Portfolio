@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { tech, professionalExperience } from './Constants';
 import {FilterController} from '../../elements';
 import ProjectsContainer from '../../containers/ProjectsContainer';
+import { ReactComponent as WaveDivider } from "../../../assets/img/wave-haikei.svg";
 import 'animate.css';
 import './experience.scss'
 
@@ -33,6 +34,9 @@ class Experience extends React.Component {
 
   return (
     <section className="project portfolio-section" id="project">
+			<div className="wave-divider">
+				<WaveDivider/>
+			</div>
       <div className='container'>
           <div className='projects-column'>
                 <h2>Experience</h2>

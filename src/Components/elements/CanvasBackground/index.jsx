@@ -3,6 +3,7 @@ import './CanvasBackground.scss'
 
 function Particles() {
 	const canvasRef = useRef(null)
+
 	useEffect(() => {
 		const canvas = canvasRef.current
 
@@ -14,6 +15,7 @@ function Particles() {
 
 		context.fillStyle = 'red'
 		context.fillRect(0,0,100,100)
+		
 	},[])
 	return (
 		<canvas id="particleBg" ref={canvasRef} />

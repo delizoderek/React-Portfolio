@@ -8,10 +8,6 @@ $circle-dimensions: 60px;
   @include config.container;
   margin-top: 0;
   padding: 0px;
-  background-image: url("../../../assets/img/banner-bg.png");
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
   @include config.lg {
     padding: 0px 0 100px 0;
   }
@@ -143,9 +139,12 @@ $circle-dimensions: 60px;
 }
 
 .wrapper {
-  height: 90vh;
+  height: 125vh;
   perspective: 1000px;
   padding: 0 15px;
+  @include config.md {
+    height: 90vh;
+  }
   @include config.lg {
     height: 585px;
   }

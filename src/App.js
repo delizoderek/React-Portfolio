@@ -9,7 +9,7 @@ import './styles/App.css'
 function App() {
 	return (
 		<div className="App">
-			<CanvasBackground/>
+			<div id="particleBg"></div>
 			<ScrollingContainer>
 				<Home/>
 				<Experience/>
