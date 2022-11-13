@@ -124,6 +124,16 @@ p.danger {
 	@include config.md {
 		min-height: 100vh;
 	}
+	@include config.lg{
+		margin-bottom: 100px;
+	}
+}
+
+.main-section{
+	min-height: 100%;
+	&:first-child{
+		margin-bottom: 110px;
+	}
 }
 
 .flex{

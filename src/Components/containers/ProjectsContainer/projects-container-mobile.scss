@@ -1,0 +1,18 @@
+@use '../../../styles/config.scss';
+.swiper-container{
+	width: 100%;
+	height: 450px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.swiper-slider{
+	@include config.container
+}
+.swiper-3d {
+	.swiper-slide-shadow-left{
+		background-image: none;
+	}
+	.swiper-slide-shadow-right{
+		background-image: none;
+	}
+}
