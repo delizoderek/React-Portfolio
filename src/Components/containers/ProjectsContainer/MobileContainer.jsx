@@ -1,26 +1,29 @@
 import React from "react";
 import MobileCard from "../../elements/Cards/MobileCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCube } from "swiper";
+import { EffectCube, Pagination } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
+import 'swiper/css/pagination';
 import "swiper/css/effect-cube";
 import "./projects-container-mobile.scss";
 
 function MobileContainer({ items }) {
+	console.log(items?.size > 0)
   return (
-    <div className="projects-container" style={{ minHeight: "100vh;" }}>
+    <div className="projects-container">
       <Swiper
-        modules={[EffectCube]}
+        modules={[EffectCube, Pagination]}
         className="swiper-container"
         spaceBetween={50}
-        slidesPerView={2}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
+				pagination = {{
+					type : 'progressbar'
+				}}
         effect="cube"
         grabCursor
         centeredSlides
+				loop={items?.size > 0}
       >
         {items.map((project, index) => {
           return (

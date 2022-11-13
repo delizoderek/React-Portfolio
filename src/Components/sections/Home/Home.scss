@@ -28,7 +28,7 @@ $circle-dimensions: 60px;
     display: inline-block;
   }
   h1 {
-    font-size: 48px;
+    font-size: 45px;
 		text-align: center;
     font-weight: 700;
     letter-spacing: 0.8px;
@@ -68,8 +68,8 @@ $circle-dimensions: 60px;
 		text-align: center;
     letter-spacing: 0.8px;
     line-height: 1.5em;
-    width: 96%;
 		@include config.lg{
+			width: 96%;
 			text-align: left;
 		}
   }
@@ -96,7 +96,10 @@ $circle-dimensions: 60px;
 		}
   }
   .button-top {
-    margin-top: 60px;
+		margin-top: 20px;
+		@include config.lg{
+			margin-top: 60px;
+		}
   }
   .button-bottom {
 		margin-bottom: 10px;
@@ -142,7 +145,7 @@ $circle-dimensions: 60px;
 }
 
 .wrapper {
-  height: 125vh;
+  height: 820px;
   perspective: 1000px;
   padding: 0 15px;
   @include config.lg {

@@ -107,18 +107,15 @@ function Particles() {
     if (!contextRef.current) {
       return;
     }
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+		try{
 
-    var background = new Image();
-    background.src = "./";
-
-    // Make sure the image is loaded first otherwise nothing will draw.
-    background.onload = function () {
-      ctx.drawImage(background, 0, 0);
-    };
-
-    init();
+			canvas.width = window.innerWidth;
+			canvas.height = window.innerHeight;
+			
+			init();
+		} catch (error){
+			console.log(error)
+		}
   }, []);
   return <canvas id="particleBg" ref={canvasRef} />;
 }
