@@ -3,6 +3,8 @@
 .filter-container {
 	@include config.container;
 	flex-wrap : wrap;
-	height: 200px;
 	width: 100%;
+	@include config.lg{
+		height: 200px;
+	}
 }

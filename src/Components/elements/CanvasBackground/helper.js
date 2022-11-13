@@ -1,24 +1,3 @@
-const canvas = document.getElementById('canvas1')
-const context = canvas.getContext('2d')
-canvas.height = window.innerHeight
-canvas.width = window.innerWidth
-
-let particlesArray
-
-// getMousePosition
-let mouse = {
-    x: null,
-    y: null,
-    radius : (canvas.height/80) * (canvas.width/80)
-}
-
-window.addEventListener('mousemove',
-function (event){
-    mouse.x = event.x;
-    mouse.y = event.y;
-})
-
-
 function calculateDistance(x1,y1,x2,y2) {
     const dx = x2-x1;
     const dy = y2-y1;

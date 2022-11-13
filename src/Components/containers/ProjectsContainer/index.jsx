@@ -1,15 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import DesktopContainer from "./DesktopContainer";
 import MobileContainer from "./MobileContainer";
+import { WindowContext } from '../../../App'
 function ProjectsContainer({filters, items}) {
   const [isMobile, setIsMobile] = useState(false);
+	const dimensions = useContext(WindowContext)
 	const filterFunction = ( item ) => {
 		return item.skill.some(skill => filters.has(skill))
 	}
 
   //choose the screen size
   const handleResize = () => {
-    if (window.innerWidth < 992) {
+    if (dimensions.width < 992) {
       setIsMobile(true);
     } else {
       setIsMobile(false);
@@ -19,11 +21,10 @@ function ProjectsContainer({filters, items}) {
   // create an event listener
   useEffect(() => {
 		handleResize()
-    window.addEventListener("resize", handleResize);
-  },[]);
+  },[dimensions]);
 
 	let projectList = items
-	if(filters?.length > 0){
+	if(filters?.size > 0){
 		projectList = items.filter(filterFunction)
 	}
 
