@@ -24,7 +24,6 @@ const MobileCard = (props) => {
       </div>
       <div className="mobile-content">
         <div className="mobile-details">
-          {/*<WaveDivider className="wave-divider"/> */}
           <p>{longDescription}</p>
           <div className="mobile-links">
             {deployment && (

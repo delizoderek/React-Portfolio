@@ -49,6 +49,7 @@
       @include config.container($justify: space-around);
       opacity: 1;
       width: 100%;
+			z-index: 100;
     }
   }
 }

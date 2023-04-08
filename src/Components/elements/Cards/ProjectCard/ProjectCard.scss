@@ -118,6 +118,7 @@ $content-shrink-time: 0.2s;
       transition: $content-shrink-time;
       opacity: 0;
       width: 100%;
+			z-index: 1;
     }
   }
 }

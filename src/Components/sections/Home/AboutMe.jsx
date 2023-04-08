@@ -30,7 +30,7 @@ function AboutMe({ onClick, text }) {
             to assemble the E-nable Raptor Reloaded 3D printable prosthetic
             hand. When I am not working, I like to play video games, skateboard
             or snowboard (depending on the season), work on various projects,
-            and spend time with my dog. Speaking of my dog, I need to take out for a walk!
+            and spend time with my dog. Speaking of my dog, I need to take her for a walk!
           </p>
         </article>
       </div>
