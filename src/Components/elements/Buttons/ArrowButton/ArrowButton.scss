@@ -1,0 +1,108 @@
+@use "../../../../styles/config.scss";
+
+.arrow {
+	@include config.label();
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  > svg {
+    font-size: 25px;
+    transition: 0.3s ease-in-out;
+    line-height: 1;
+  }
+}
+
+.arrow-right {
+	@extend .arrow;
+	> svg {
+		margin-left: 10px;
+	}
+	&:hover {
+		> svg {
+			margin-left: 25px;
+		}
+	}
+}
+
+.arrow-up {
+  @extend .arrow-right;
+	> svg {
+		transform: rotate(-90deg);
+	}
+}
+
+
+.arrow-down {
+  @extend .arrow-right;
+	> svg {
+		transform: rotate(90deg);
+	}
+}
+
+.arrow-left {
+  @extend .arrow;
+	flex-direction: row-reverse;
+  > svg {
+		transform: rotate(180deg);
+    margin-right: 10px;
+  }
+  &:hover {
+    > svg {
+      margin-right: 25px;
+    }
+  }
+}
+
+.arrow-hidden {
+  @extend .arrow;
+  visibility: hidden;
+}
+
+// button {
+// 	color: #fff;
+// 	font-weight: 700;
+// 	font-size: 20px;
+// 	letter-spacing: 0.8px;
+// 	display: flex;
+// 	align-items: center;
+// 	cursor: pointer;
+// 	svg {
+// 		font-size: 25px;
+// 		transition: 0.3s ease-in-out;
+// 		line-height: 1;
+// 	}
+// 	&:hover{
+// 		.svg-left {
+// 			margin-left: 25px;
+// 		}
+// 		.svg-right {
+// 			margin-right: 25px;
+// 		}
+// 	}
+// }
+// .button-top {
+// 	margin-top: 20px;
+// 	@include config.lg{
+// 		margin-top: 60px;
+// 	}
+// }
+// .button-bottom {
+// 	margin-bottom: 10px;
+// 	@include config.lg{
+// 		margin-bottom: 40px;
+// 	}
+// }
+// .bounce {
+// 	animation: updown 3s linear infinite;
+// }
+// }
+// .svg-left {
+// margin-left: 10px;
+// }
+// .svg-right {
+// margin-right: 10px;
+// }
+
+// .svg-down {
+// transform: rotate(90deg);
+// }

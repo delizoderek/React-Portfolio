@@ -73,28 +73,11 @@ $circle-dimensions: 60px;
 			text-align: left;
 		}
   }
-  button {
-    color: #fff;
-    font-weight: 700;
-    font-size: 20px;
-    letter-spacing: 0.8px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    svg {
-      font-size: 25px;
-      transition: 0.3s ease-in-out;
-      line-height: 1;
-    }
-		&:hover{
-			.svg-left {
-				margin-left: 25px;
-			}
-			.svg-right {
-				margin-right: 25px;
-			}
-		}
-  }
+
+	.arrow-buttons{
+		@include config.container($direction: column, $align: flex-start)
+	}
+
   .button-top {
 		margin-top: 20px;
 		@include config.lg{
@@ -111,15 +94,9 @@ $circle-dimensions: 60px;
     animation: updown 3s linear infinite;
   }
 }
-.svg-left {
-  margin-left: 10px;
-}
-.svg-right {
-  margin-right: 10px;
-}
 
-.svg-down {
-  transform: rotate(90deg);
+.button-space {
+	margin-top: 25px;
 }
 
 @keyframes updown {

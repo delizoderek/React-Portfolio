@@ -40,6 +40,19 @@
 	}
 }
 
+@mixin label() {
+	color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+}
+
+@mixin button(){
+	background: linear-gradient(#FF930A, #F24B04);
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+
 @mixin container($direction: row, $justify: center, $align: center) {
 	display: flex;
 	flex-direction: $direction;

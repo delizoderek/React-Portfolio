@@ -1,0 +1,61 @@
+@use "../styles/config.scss";
+
+.resume {
+  @include config.container($direction: column, $justify: flex-start);
+  height: 100vh;
+  overflow: hidden;
+  header {
+    @include config.container($justify: space-between);
+    height: 60px;
+    width: 100%;
+		padding: 0 10px;
+		> a {
+			@include config.label();
+			@include config.button();
+		}
+  }
+  .document-container {
+    margin-top: 1em;
+    overflow-y: scroll;
+    height: 100%;
+		.document {
+			background: white;
+		}
+  }
+}
+
+.page_2 {
+	top: -75px;
+}
+
+.resume-container {
+	position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 10px 0 10px;
+	margin: 0 40px;
+	height: 100%;
+}
+
+.zoom-settings {
+	@include config.container($direction: column);
+	position: absolute;
+	top: 80px;
+	left: -40px;
+	> button {
+		@include config.label();
+		@include config.button();
+		@include config.container();
+		width: 40px;
+		height: 40px;
+		font-size: 40px;
+		cursor: pointer;
+	}
+	:first-child {
+		margin-bottom: 5px;
+	}
+	:last-child {
+		margin-top: 5px;
+	}
+}

@@ -1,21 +1,19 @@
 import React from "react";
+import ArrowButton from "../../elements/Buttons/ArrowButton/ArrowButton";
 import headerImg from "../../../assets/img/DerekAnimatedHeadshot.webp";
-import { ReactComponent as LeftArrow } from "../../../assets/img/left-arrow-no-circle.svg";
 import "animate.css";
 
 function AboutMe({ onClick, text }) {
   return (
     <div className="row">
       <div className="about-me pane-left">
-        <button className="button-bottom" onClick={onClick}>
-          <LeftArrow
-            className="svg-right"
-            width={25}
-            height={25}
-            fill="white"
-          />
-          {"Back"}
-        </button>
+						<ArrowButton
+							classesToAdd="button-bottom"
+							arrowLocation="left"
+							fillColor="white"
+							onClick={onClick}
+							text=" Back "
+						/>
         <article>
           <h1 className="title">About Me</h1>
           <p>
@@ -35,7 +33,7 @@ function AboutMe({ onClick, text }) {
         </article>
       </div>
       <div className="pane-right">
-        <img src={headerImg} alt="Header Img" />
+        <img rel="preload" src={headerImg} alt="Header Img" />
       </div>
     </div>
   );
